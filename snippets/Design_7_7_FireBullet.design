@@ -5,10 +5,18 @@
             <group eventID="-1" id="-1">
                 <if comment="false" x="26" y="45">
                     <group eventID="-1" id="-1">
-                        <set-val-7-10 comment="false" x="37" y="70">
+                        <setanim comment="false" x="37" y="70">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Shoot"/>
+                        </setanim>
+                        <set-val-7-10 comment="false" x="37" y="97">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-7-10>
-                        <create-actor3 comment="false" x="37" y="95">
+                        <setanim comment="false" x="37" y="122">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-7-13 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                        <create-actor3 comment="false" x="37" y="154">
                             <actortype eid="var" id="0" vid="4"/>
                             <plus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -26,10 +34,10 @@
                             </plus>
                             <int id="3" val="2"/>
                         </create-actor3>
-                        <set-val-7-9 comment="false" x="37" y="140">
+                        <set-val-7-9 comment="false" x="37" y="199">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-7-9>
-                        <set-xy comment="false" x="37" y="167">
+                        <set-xy comment="false" x="37" y="226">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="0"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -46,7 +54,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <set-xy comment="false" x="37" y="217">
+                        <set-xy comment="false" x="37" y="276">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -63,7 +71,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <setangle comment="false" x="37" y="267">
+                        <setangle comment="false" x="37" y="326">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -75,7 +83,7 @@
                                 <get-val-7-6 comment="false" id="1" x="0" y="0"/>
                             </minus>
                         </setangle>
-                        <setvel comment="false" x="37" y="317">
+                        <setvel comment="false" x="37" y="376">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -88,19 +96,23 @@
                             </minus>
                             <get-val-7-2 comment="false" id="2" x="0" y="0"/>
                         </setvel>
-                        <play-sound4 comment="false" x="37" y="367">
+                        <play-sound4 comment="false" x="37" y="426">
                             <int id="0" val="0"/>
                             <sound eid="var" id="1" vid="7"/>
                         </play-sound4>
                     </group>
                     <get-val-7-10 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="26" y="406">
+                <else comment="false" x="26" y="465">
                     <group eventID="-1" id="-1">
-                        <set-val-7-10 comment="false" x="37" y="426">
+                        <setanim comment="false" x="37" y="485">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Move/Idle"/>
+                        </setanim>
+                        <set-val-7-10 comment="false" x="37" y="512">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-7-10>
-                        <create-actor3 comment="false" x="37" y="451">
+                        <create-actor3 comment="false" x="37" y="537">
                             <actortype eid="var" id="0" vid="4"/>
                             <get-xy comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -112,10 +124,10 @@
                             </get-xy>
                             <int id="3" val="1"/>
                         </create-actor3>
-                        <set-val-7-9 comment="false" x="37" y="491">
+                        <set-val-7-9 comment="false" x="37" y="577">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-7-9>
-                        <set-xy comment="false" x="37" y="518">
+                        <set-xy comment="false" x="37" y="604">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="0"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -132,7 +144,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <set-xy comment="false" x="37" y="568">
+                        <set-xy comment="false" x="37" y="654">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -149,7 +161,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <setangle comment="false" x="37" y="618">
+                        <setangle comment="false" x="37" y="704">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -161,7 +173,7 @@
                                 <get-val-7-6 comment="false" id="1" x="0" y="0"/>
                             </minus>
                         </setangle>
-                        <setvel comment="false" x="37" y="668">
+                        <setvel comment="false" x="37" y="754">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -174,7 +186,7 @@
                             </minus>
                             <get-val-7-2 comment="false" id="2" x="0" y="0"/>
                         </setvel>
-                        <play-sound4 comment="false" x="37" y="718">
+                        <play-sound4 comment="false" x="37" y="804">
                             <int id="0" val="0"/>
                             <sound eid="var" id="1" vid="7"/>
                         </play-sound4>
@@ -183,26 +195,6 @@
             </group>
             <get-val-7-1 comment="false" id="0" x="0" y="0"/>
         </receive-message>
-    </group>
-    <group eventID="1" id="1">
-        <set-val-7-8 comment="false" x="545" y="46">
-            <false comment="false" id="0" x="0" y="0"/>
-        </set-val-7-8>
-    </group>
-    <group eventID="1" id="3">
-        <set-val-7-8 comment="false" x="717" y="446">
-            <false comment="false" id="0" x="0" y="0"/>
-        </set-val-7-8>
-    </group>
-    <group eventID="1" id="4">
-        <if comment="false" x="847" y="10">
-            <group eventID="1" id="-1"/>
-            <not comment="false" id="0" x="0" y="0">
-                <isalive comment="false" id="0" x="0" y="0">
-                    <ACTOR eid="var" id="0" vid="9"/>
-                </isalive>
-            </not>
-        </if>
     </group>
     <group eventID="1" id="-1"/>
 </groups>

@@ -34,17 +34,17 @@
         </draw>
     </group>
     <group eventID="3" id="-1">
-        <plus comment="false" x="251" y="122">
-            <int id="0" val=""/>
-            <int id="1" val="10"/>
-        </plus>
-        <get-xy comment="false" x="257" y="131">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="1"/>
-        </get-xy>
         <get-xy comment="false" x="193" y="181">
             <ACTOR eid="this" id="0"/>
             <int id="1" val="0"/>
         </get-xy>
+        <get-xy comment="false" x="257" y="131">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </get-xy>
+        <plus comment="false" x="251" y="122">
+            <int id="0" val=""/>
+            <int id="1" val="10"/>
+        </plus>
     </group>
 </groups>
