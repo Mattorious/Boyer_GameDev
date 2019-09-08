@@ -106,7 +106,7 @@
             <poly data="4,0,0,200,0,200,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="18" name="Desert Background" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="200,200,200,200,200,200" dx="-0.0" dy="-0.0" height="480" id="18" name="Desert Background" numframes="6" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <tileset across="1" atlasID="0" desc="" down="2" id="17" name="Desert Ground" oid="-1" readable="false" shared="false" th="32" tw="32">
         <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
