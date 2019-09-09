@@ -9,6 +9,9 @@
             </s>
             <s enabled="true" id="1">
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="1"/>
+                <prop id="3" list="0" val="false"/>
             </s>
             <s enabled="true" id="2">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -36,6 +39,9 @@
             </s>
             <s enabled="true" id="1">
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="20"/>
+                <prop id="3" list="0" val="false"/>
             </s>
             <s enabled="true" id="2">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -49,7 +55,7 @@
             </s>
         </snippets>
     </actor>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Saucer" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="25" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Saucer" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
         <snippets>
             <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -59,6 +65,9 @@
             </s>
             <s enabled="true" id="1">
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="2"/>
+                <prop id="3" list="0" val="false"/>
             </s>
             <s enabled="true" id="2">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -145,7 +154,7 @@
             <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="13" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="13" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank Basic" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
         <snippets>
             <s enabled="true" id="5">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -183,12 +192,66 @@
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="2" name="Player Tank" readable="false" shared="false">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="2" name="Player Tank Basic" readable="false" shared="false">
         <anim across="2" down="2" durations="100,100,100,100" height="256" id="0" loop="true" name="Move/Idle" numframes="4" originx="64" originy="64" sync="false" version="2" width="256">
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
         <anim across="3" down="2" durations="100,100,100,100,100,100" height="256" id="1" loop="true" name="Shoot" numframes="6" originx="64" originy="64" sync="false" version="2" width="384">
             <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="24" fixedrot="true" fric="0.2" gid="3" id="25" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank Stream" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="26" static="false">
+        <snippets>
+            <s enabled="true" id="9">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="18" list="0" val="false"/>
+                <prop id="19" list="0" val="false"/>
+                <prop id="7" list="0" val="left"/>
+                <prop id="8" list="0" val="right"/>
+                <prop id="9" list="0" val="3"/>
+                <prop id="11" list="0" val="8"/>
+                <prop id="12" list="0" val="0"/>
+            </s>
+            <s enabled="true" id="10">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="22">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="Fire"/>
+                <prop id="2" list="0" val="25"/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val="9"/>
+                <prop id="5" list="0" val="90"/>
+                <prop id="6" list="0" val="90"/>
+                <prop id="7" list="0" val="16"/>
+                <prop id="8" list="0" val="true"/>
+                <prop id="9" list="0" val=""/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="11" list="0" val="0.0"/>
+                <prop id="12" list="0" val="0.0"/>
+                <prop id="13" list="0" val="Shoot"/>
+            </s>
+            <s enabled="true" id="23">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="Fire"/>
+                <prop id="2" list="0" val="action1"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="26" name="Player Tank Stream" readable="false" shared="false">
+        <anim across="2" down="2" durations="100,100,100,100" height="256" id="0" loop="true" name="Move/Idle" numframes="4" originx="64" originy="64" sync="false" version="2" width="256">
+            <poly data="4,30,96,94,96,94,128,30,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="2" durations="100,100,100,100,100,100" height="256" id="1" loop="true" name="Shoot" numframes="6" originx="64" originy="64" sync="false" version="2" width="384">
+            <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="21" fixedrot="false" fric="0.2" gid="3" id="23" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="UIFrame" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="24" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="24" name="UIFrame" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="240" id="0" loop="true" name="Animation 0" numframes="1" originx="80" originy="120" sync="false" version="2" width="160">
+            <poly data="4,0,0,160,0,160,240,0,240" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
 </pack>

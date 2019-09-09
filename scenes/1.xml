@@ -37,47 +37,7 @@
         <actor a="0.0" aid="30" c="false" group="4" id="5" name="Alien Grabber 30" order="23" sx="1.0" sy="1.0" x="448" y="160" z="0"/>
         <actor a="0.0" aid="31" c="false" group="4" id="5" name="Alien Grabber 31" order="24" sx="1.0" sy="1.0" x="64" y="224" z="0"/>
         <actor a="0.0" aid="32" c="false" group="4" id="5" name="Alien Grabber 32" order="25" sx="1.0" sy="1.0" x="512" y="224" z="0"/>
-        <actor a="0.0" aid="33" c="true" group="3" id="1" name="Player Tank 33" order="26" sx="0.953125" sy="0.953125" x="266" y="322" z="0">
-            <snippets>
-                <s enabled="true" id="5">
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                    <prop id="1" list="0" val="fire"/>
-                    <prop id="2" list="0" val="space"/>
-                </s>
-                <s enabled="true" id="7">
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                    <prop id="1" list="0" val="fire"/>
-                    <prop id="2" list="0" val="22"/>
-                    <prop id="3" list="0" val=""/>
-                    <prop id="4" list="0" val="9"/>
-                    <prop id="5" list="0" val="90"/>
-                    <prop id="6" list="0" val="90"/>
-                    <prop id="7" list="0" val="16"/>
-                    <prop id="8" list="0" val="true"/>
-                    <prop id="9" list="0" val=""/>
-                    <prop id="10" list="0" val="false"/>
-                    <prop id="11" list="0" val="-6"/>
-                    <prop id="12" list="0" val="0"/>
-                    <prop id="13" list="0" val=""/>
-                </s>
-                <s enabled="true" id="9">
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                    <prop id="18" list="0" val="false"/>
-                    <prop id="19" list="0" val="false"/>
-                    <prop id="7" list="0" val="left"/>
-                    <prop id="8" list="0" val="right"/>
-                    <prop id="9" list="0" val="3"/>
-                    <prop id="11" list="0" val="8"/>
-                    <prop id="12" list="0" val="0"/>
-                </s>
-                <s enabled="true" id="10">
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                </s>
-                <s enabled="true" id="13">
-                    <prop id="1" list="0" val=""/>
-                </s>
-            </snippets>
-        </actor>
+        <actor a="0.0" aid="33" c="false" group="3" id="25" name="Player Tank Stream 33" order="26" sx="1.0" sy="1.0" x="256" y="320" z="0"/>
     </actors>
     <snippets/>
     <terrain>
