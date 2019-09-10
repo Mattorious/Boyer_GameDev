@@ -11,8 +11,8 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_DieWhenHit" classname="scripts.Design_1_1_DieWhenHit" desc="When hit, kill the collided actor and kill self." description="When hit, kill the collided actor and kill self." design="true" drawOrder="0" id="1" name="Die and Kill When Hit" oid="-1" package="" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="health" hidden="true" id="1" name="_health" order="1"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="maxHealth" hidden="false" id="2" name="_maxHealth" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="health" hidden="true" id="1" name="_health" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="maxHealth" hidden="false" id="2" name="_maxHealth" order="3"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="killed" hidden="false" id="3" name="_killed" order="2"/>
         <blocks/>
         <events>
@@ -72,14 +72,18 @@
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_9_9_2WayControl" classname="scripts.Design_9_9_2WayControl" desc="Allows the player to move just left and right." description="Allows the player to move just left and right." design="true" drawOrder="0" id="9" name="2 Way Control" oid="-1" package="" shared="false" type="actor">
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="7"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="pressedLeft" hidden="true" id="18" name="pressedLeft" order="0"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="pressedRight" hidden="true" id="19" name="pressedRight" order="0"/>
-        <control default="" defaultValue="" desc="" dropdown="" fullname="Left Control" hidden="false" id="7" name="controlLeft" order="6"/>
-        <control default="" defaultValue="" desc="" dropdown="" fullname="Right Control" hidden="false" id="8" name="controlRight" order="7"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="Left=3&#10;Right=4" fullname="Initial Direction" hidden="false" id="9" name="dir" order="0"/>
-        <number default="18" defaultValue="18" desc="The fastest it will move." dropdown="" fullname="Top Speed" hidden="false" id="11" name="topSpeed" order="2"/>
-        <number default="0" defaultValue="0" desc="How quickly it loses speed when the key's let go." dropdown="" fullname="Slowdown Rate" hidden="false" id="12" name="decel" order="3"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="pressedRight" hidden="true" id="19" name="pressedRight" order="1"/>
+        <sound default="" defaultValue="" desc="" dropdown="" fullname="MovementSound" hidden="false" id="20" name="_MovementSound" order="8"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="MovementRandom" hidden="false" id="21" name="_MovementRandom" order="9"/>
+        <control default="" defaultValue="" desc="" dropdown="" fullname="Left Control" hidden="false" id="7" name="controlLeft" order="5"/>
+        <sound default="" defaultValue="" desc="" dropdown="" fullname="MovementSound3" hidden="false" id="23" name="_MovementSound3" order="10"/>
+        <control default="" defaultValue="" desc="" dropdown="" fullname="Right Control" hidden="false" id="8" name="controlRight" order="6"/>
+        <sound default="" defaultValue="" desc="" dropdown="" fullname="MovementSound2" hidden="false" id="24" name="_MovementSound2" order="11"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="Left=3&#10;Right=4" fullname="Initial Direction" hidden="false" id="9" name="dir" order="2"/>
+        <number default="18" defaultValue="18" desc="The fastest it will move." dropdown="" fullname="Top Speed" hidden="false" id="11" name="topSpeed" order="3"/>
+        <number default="0" defaultValue="0" desc="How quickly it loses speed when the key's let go." dropdown="" fullname="Slowdown Rate" hidden="false" id="12" name="decel" order="4"/>
         <blocks/>
         <events>
             <event displayName="moveRight" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
@@ -176,13 +180,13 @@
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2"/>
         <text default="" defaultValue="" desc="Message that's sent." dropdown="" fullname="Action to Perform" hidden="false" id="1" name="action" order="0"/>
         <control default="" defaultValue="" desc="The control to listen for." dropdown="" fullname="Key" hidden="false" id="2" name="key" order="1"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="fireCount" hidden="false" id="3" name="_fireCount" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="fireCount" hidden="false" id="3" name="_fireCount" order="3"/>
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
         </events>
     </snippet>
-    <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_25" classname="scripts.ActorEvents_25" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="24" name="ActorEvents_25" oid="-1" package="scripts." shared="false" type="actor">
+    <snippet actorid="25" attachedevent="true" class="scripts.ActorEvents_25" classname="scripts.ActorEvents_25" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="24" name="ActorEvents_25" oid="-1" package="scripts." shared="false" type="actor">
         <text default="" defaultValue="" desc="" dropdown="" fullname="identity" hidden="false" id="1" name="_identity" order="0"/>
         <blocks/>
         <events>

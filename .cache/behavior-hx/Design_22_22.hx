@@ -110,6 +110,7 @@ class Design_22_22 extends ActorScript
 		super(actor);
 		nameMap.set("Actor", "actor");
 		nameMap.set("Triggering Message", "trigger");
+		trigger = "";
 		nameMap.set("Speed", "speed");
 		speed = 0.0;
 		nameMap.set("spawned", "spawned");

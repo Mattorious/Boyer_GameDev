@@ -15,7 +15,7 @@
                             <group eventID="1" id="-1">
                                 <shout comment="false" x="48" y="148">
                                     <ACTOR eid="this" id="0"/>
-                                    <get-val-5-1 comment="false" id="1" x="0" y="0"/>
+                                    <get-val-23-1 comment="false" id="1" x="0" y="0"/>
                                 </shout>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
@@ -30,7 +30,7 @@
                     <and comment="false" id="0" x="0" y="0">
                         <keystate comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
-                            <get-val-5-2 comment="false" id="1" x="0" y="0"/>
+                            <get-val-23-2 comment="false" id="1" x="0" y="0"/>
                         </keystate>
                         <less comment="false" id="1" x="0" y="0">
                             <get-val-23-3 comment="false" id="0" x="0" y="0"/>
