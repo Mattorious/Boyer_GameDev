@@ -81,7 +81,6 @@ class Design_22_22 extends ActorScript
 		if(_Fired)
 		{
 			_Fired = true;
-			actor.setAnimation(_ShootAnim);
 			createRecycledActor(bullet, (actor.getXCenter() + _XOffset), (actor.getYCenter() + _YOffset), Script.BACK);
 			_BulletCreated = getLastCreatedActor();
 			getLastCreatedActor().setX((getLastCreatedActor().getX() - ((getLastCreatedActor().getWidth()) / 2)));

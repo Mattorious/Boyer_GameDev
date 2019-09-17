@@ -115,6 +115,7 @@
             <poly data="4,0,0,200,0,200,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="76" id="37" name="Bell MT White 32x" offsets="0|0|0|,9|0|9,13|0|13,23|0|23,43|0|43,58|0|58,81|0|81,103|0|103,108|0|108,117|0|117,126|0|126,141|0|141,160|0|160,166|0|166,178|0|178,182|0|182,197|0|197,214|0|214,224|0|224,239|0|239,253|0|253,269|0|269,283|0|283,298|0|298,312|0|312,325|0|325,340|0|340,344|0|344,350|0|350,368|0|368,386|0|386,404|0|404,416|0|416,445|0|445,468|0|468,487|0|487,508|0|508,532|0|532,552|0|552,572|0|572,596|0|596,621|0|621,632|0|632,645|0|645,667|0|667,688|0|688,719|0|719,744|0|744,766|0|766,785|0|785,807|0|807,829|0|829,845|0|845,869|0|869,893|0|893,916|0|916,950|0|950,975|0|975,999|0|999,1019|0|1019,1033|0|1033,1048|0|1048,1062|0|1062,1078|0|1078,1097|0|1097,1105|0|1105,1119|0|1119,1134|0|1134,1147|0|1147,1163|0|1163,1176|0|1176,1190|0|1190,1208|0|1208,1225|0|1225,1233|0|1233,1243|0|1243,1260|0|1260,1270|0|1270,1296|0|1296,1312|0|1312,1327|0|1327,1343|0|1343,1359|0|1359,1372|0|1372,1384|0|1384,1395|0|1395,1411|0|1411,1428|0|1428,1452|0|1452,1470|0|1470,1487|0|1487,1500|0|1500,1511|0|1511,1514|0|1514,1525|0|1525,1543|0|1543,1544|0|1544,1545|0|1545,1546|0|1546,1547|0|1547,1548|0|1548,1549|0|1549,1550|0|1550,1551|0|1551,1552|0|1552,1553|0|1553,1554|0|1554,1555|0|1555,1556|0|1556,1557|0|1557,1558|0|1558,1559|0|1559,1560|0|1560,1561|0|1561,1562|0|1562,1563|0|1563,1564|0|1564,1565|0|1565,1566|0|1566,1567|0|1567,1568|0|1568,1569|0|1569,1570|0|1570,1571|0|1571,1572|0|1572,1573|0|1573,1574|0|1574,1575|0|1575,1576|0|1576,1585|0|1585,1589|0|1589,1602|0|1602,1630|0|1630,1646|0|1646,1670|0|1670,1673|0|1673,1687|0|1687,1697|0|1697,1721|0|1721,1731|0|1731,1747|0|1747,1766|0|1766,1778|0|1778,1802|0|1802,1803|0|1803,1815|0|1815,1834|0|1834,1844|0|1844,1854|0|1854,1862|0|1862,1879|0|1879,1898|0|1898,1899|0|1899,1907|0|1907,1915|0|1915,1926|0|1926,1942|0|1942,1963|0|1963,1983|0|1983,2006|0|2006,2018|0|2018,2041|0|2041,2064|0|2064,2087|0|2087,2110|0|2110,2133|0|2133,2156|0|2156,2189|0|2189,2210|0|2210,2230|0|2230,2250|0|2250,2270|0|2270,2290|0|2290,2301|0|2301,2312|0|2312,2322|0|2322,2333|0|2333,2357|0|2357,2382|0|2382,2404|0|2404,2426|0|2426,2448|0|2448,2470|0|2470,2492|0|2492,2509|0|2509,2531|0|2531,2555|0|2555,2579|0|2579,2603|0|2603,2627|0|2627,2651|0|2651,2670|0|2670,2686|0|2686,2700|0|2700,2714|0|2714,2728|0|2728,2742|0|2742,2756|0|2756,2770|0|2770,2791|0|2791,2804|0|2804,2817|0|2817,2830|0|2830,2843|0|2843,2856|0|2856,2864|0|2864,2872|0|2872,2882|0|2882,2892|0|2892,2907|0|2907,2923|0|2923,2938|0|2938,2953|0|2953,2968|0|2968,2983|0|2983,2998|0|2998,3017|0|3017,3032|0|3032,3048|0|3048,3064|0|3064,3080|0|3080,0|38|3096,17|38|3113,34|38|3130,51|38|3147,52|38|3148,53|38|3149,54|38|3150,55|38|3151,56|38|3152,57|38|3153,58|38|3154,59|38|3155,60|38|3156,61|38|3157,62|38|3158,63|38|3159,64|38|3160,65|38|3161,66|38|3162,67|38|3163,68|38|3164,69|38|3165,70|38|3166,71|38|3167,72|38|3168,73|38|3169,74|38|3170,75|38|3171,76|38|3172,77|38|3173,78|38|3174,79|38|3175,80|38|3176,81|38|3177,82|38|3178,83|38|3179,84|38|3180,85|38|3181,86|38|3182,87|38|3183,88|38|3184,89|38|3185,90|38|3186,91|38|3187,92|38|3188,93|38|3189,94|38|3190,95|38|3191,96|38|3192,97|38|3193,98|38|3194,99|38|3195,100|38|3196,108|38|3204,109|38|3205,110|38|3206,111|38|3207,112|38|3208,113|38|3209,114|38|3210,115|38|3211,116|38|3212,117|38|3213,118|38|3214,119|38|3215,120|38|3216,121|38|3217,122|38|3218,123|38|3219,124|38|3220,125|38|3221,126|38|3222,127|38|3223,128|38|3224,129|38|3225,130|38|3226,131|38|3227,132|38|3228,133|38|3229,134|38|3230,135|38|3231,136|38|3232,137|38|3233,138|38|3234,139|38|3235,140|38|3236,174|38|3270,198|38|3294,199|38|3295,200|38|3296,201|38|3297,202|38|3298,203|38|3299,204|38|3300,205|38|3301,206|38|3302,207|38|3303,208|38|3304,209|38|3305,210|38|3306,226|38|3322,238|38|3334,239|38|3335,240|38|3336,241|38|3337,242|38|3338,243|38|3339,244|38|3340,245|38|3341,246|38|3342,247|38|3343,248|38|3344,249|38|3345,250|38|3346,251|38|3347,252|38|3348,253|38|3349,254|38|3350,255|38|3351,256|38|3352,257|38|3353,258|38|3354,259|38|3355,260|38|3356" oid="-1" prerendered="false" readable="false" rowHeight="38" shared="false"/>
     <background atlasID="0" desc="" durations="200,200,200,200,200,200" dx="-0.0" dy="-0.0" height="480" id="18" name="City Background" numframes="6" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <tileset across="1" atlasID="0" desc="" down="2" id="17" name="Desert Ground" oid="-1" readable="false" shared="false" th="32" tw="32">
         <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
@@ -122,6 +123,30 @@
     </tileset>
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="16" loop="true" name="Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="27" fixedrot="false" fric="0.2" gid="3" id="33" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="GunBase" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="34" static="false">
+        <snippets>
+            <s enabled="true" id="30">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val="0"/>
+                <prop id="4" list="0" val="0"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="34" name="GunBase" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="128" id="0" loop="true" name="Animation 0" numframes="1" originx="64" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="28" fixedrot="false" fric="0.2" gid="3" id="35" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="GunLaser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="36" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="36" name="GunLaser" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="128" id="0" loop="true" name="Animation 0" numframes="1" originx="64" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="26" fixedrot="false" fric="0.2" gid="3" id="30" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Logo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="31" static="false">
         <snippets/>
     </actor>
@@ -163,57 +188,7 @@
             <poly data="4,4,4,12,4,12,12,4,12" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="13" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank Basic" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
-        <snippets>
-            <s enabled="true" id="5">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="1" list="0" val="fire"/>
-                <prop id="2" list="0" val="space"/>
-            </s>
-            <s enabled="true" id="7">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="1" list="0" val="fire"/>
-                <prop id="2" list="0" val="22"/>
-                <prop id="3" list="0" val=""/>
-                <prop id="4" list="0" val="9"/>
-                <prop id="5" list="0" val="90"/>
-                <prop id="6" list="0" val="90"/>
-                <prop id="7" list="0" val="16"/>
-                <prop id="8" list="0" val="true"/>
-                <prop id="9" list="0" val=""/>
-                <prop id="10" list="0" val="false"/>
-                <prop id="11" list="0" val="-6"/>
-                <prop id="12" list="0" val="0"/>
-                <prop id="13" list="0" val=""/>
-            </s>
-            <s enabled="true" id="9">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="18" list="0" val="false"/>
-                <prop id="19" list="0" val="false"/>
-                <prop id="20" list="0" val=""/>
-                <prop id="21" list="0" val="0"/>
-                <prop id="7" list="0" val="left"/>
-                <prop id="23" list="0" val=""/>
-                <prop id="8" list="0" val="right"/>
-                <prop id="24" list="0" val=""/>
-                <prop id="9" list="0" val="3"/>
-                <prop id="11" list="0" val="8"/>
-                <prop id="12" list="0" val="0"/>
-            </s>
-            <s enabled="true" id="10">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
-    </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="2" name="Player Tank Basic" readable="false" shared="false">
-        <anim across="2" down="2" durations="100,100,100,100" height="256" id="0" loop="true" name="Move/Idle" numframes="4" originx="64" originy="64" sync="false" version="2" width="256">
-            <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="3" down="2" durations="100,100,100,100,100,100" height="256" id="1" loop="true" name="Shoot" numframes="6" originx="64" originy="64" sync="false" version="2" width="384">
-            <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="24" fixedrot="true" fric="0.2" gid="3" id="25" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank Stream" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="26" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="24" fixedrot="true" fric="0.2" gid="3" id="25" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="26" static="false">
         <snippets>
             <s enabled="true" id="22">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -229,7 +204,7 @@
                 <prop id="10" list="0" val="false"/>
                 <prop id="11" list="0" val="0.0"/>
                 <prop id="12" list="0" val="0.0"/>
-                <prop id="13" list="0" val="Shoot"/>
+                <prop id="13" list="0" val=""/>
             </s>
             <s enabled="true" id="23">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -241,12 +216,12 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="18" list="0" val="false"/>
                 <prop id="19" list="0" val="false"/>
-                <prop id="20" list="0" val=""/>
+                <prop id="20" list="0" val="-1"/>
                 <prop id="21" list="0" val="0"/>
                 <prop id="7" list="0" val="left"/>
-                <prop id="23" list="0" val=""/>
+                <prop id="23" list="0" val="-1"/>
                 <prop id="8" list="0" val="right"/>
-                <prop id="24" list="0" val=""/>
+                <prop id="24" list="0" val="-1"/>
                 <prop id="9" list="0" val="3"/>
                 <prop id="11" list="0" val="8"/>
                 <prop id="12" list="0" val="0"/>
@@ -254,25 +229,33 @@
             <s enabled="true" id="10">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
+            <s enabled="true" id="29">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val=""/>
+            </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="26" name="Player Tank Stream" readable="false" shared="false">
-        <anim across="2" down="2" durations="100,100,100,100" height="256" id="0" loop="true" name="Move/Idle" numframes="4" originx="64" originy="64" sync="false" version="2" width="256">
-            <poly data="4,30,96,94,96,94,128,30,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="3" down="2" durations="100,100,100,100,100,100" height="256" id="1" loop="true" name="Shoot" numframes="6" originx="64" originy="64" sync="false" version="2" width="384">
-            <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="26" name="Player Tank" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="128" id="0" loop="true" name="Move/Idle" numframes="1" originx="64" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Move/Idle" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <music atlasID="0" desc="" id="27" loop="true" name="Tank1" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="28" loop="true" name="Tank2" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="29" loop="true" name="Tank3" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="21" fixedrot="false" fric="0.2" gid="3" id="23" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="UIFrame" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="24" static="false">
-        <snippets/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="32" fixedrot="false" fric="0.2" gid="3" id="38" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="TempEditTank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="39" static="false">
+        <snippets>
+            <s enabled="true" id="29">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="24" name="UIFrame" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="240" id="0" loop="true" name="Animation 0" numframes="1" originx="80" originy="120" sync="false" version="2" width="160">
-            <poly data="4,0,0,160,0,160,240,0,240" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="39" name="TempEditTank" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="128" id="0" loop="true" name="Animation 0" numframes="1" originx="64" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
 </pack>

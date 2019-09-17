@@ -61,21 +61,44 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_25 extends ActorScript
+class Design_30_30_FollowActor extends ActorScript
 {
-	public var _identity:String;
+	public var _ActorNameToFollow:String;
+	public var _ActorToFollow:Actor;
+	public var _FollowX:Float;
+	public var _FollowY:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("identity", "_identity");
-		_identity = "";
+		nameMap.set("Actor", "actor");
+		nameMap.set("ActorNameToFollow", "_ActorNameToFollow");
+		_ActorNameToFollow = "";
+		nameMap.set("ActorToFollow", "_ActorToFollow");
+		nameMap.set("FollowX", "_FollowX");
+		_FollowX = 0.0;
+		nameMap.set("FollowY", "_FollowY");
+		_FollowY = 0.0;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		_FollowX = 0;
+		_FollowY = 0;
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				actor.setX(_FollowX);
+				actor.setY(_FollowY);
+			}
+		});
 		
 	}
 	

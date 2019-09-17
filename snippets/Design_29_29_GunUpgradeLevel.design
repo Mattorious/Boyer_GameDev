@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <create-actor3 comment="false" x="37" y="70">
+                            <actortype eid="33" id="0"/>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <get-xy comment="false" id="2" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                            <int id="3" val="2"/>
+                        </create-actor3>
+                        <set-val-29-1 comment="false" x="37" y="110">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-29-1>
+                        <set-val-29-4 comment="false" x="37" y="137">
+                            <ACTOR eid="this" id="0"/>
+                        </set-val-29-4>
+                        <set-attribute comment="false" x="37" y="164">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="FollowActor"/>
+                            <int id="2" val="_FollowX"/>
+                            <get-xy comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="204">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="FollowActor"/>
+                            <int id="2" val="_FollowY"/>
+                            <get-xy comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                        </set-attribute>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="256">
+                    <group eventID="1" id="-1">
+                        <create-actor3 comment="false" x="37" y="286">
+                            <actortype eid="35" id="0"/>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <get-xy comment="false" id="2" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                            <int id="3" val="2"/>
+                        </create-actor3>
+                        <set-val-29-2 comment="false" x="37" y="326">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </set-val-29-2>
+                        <set-val-29-4 comment="false" x="37" y="353">
+                            <ACTOR eid="this" id="0"/>
+                        </set-val-29-4>
+                        <set-attribute comment="false" x="37" y="380">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="FollowActor"/>
+                            <int id="2" val="_FollowX"/>
+                            <get-xy comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="420">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="FollowActor"/>
+                            <int id="2" val="_FollowY"/>
+                            <get-xy comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                        </set-attribute>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-attribute comment="false" x="37" y="70">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="FollowActor"/>
+                            <int id="2" val="_FollowX"/>
+                            <get-xy comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="110">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="FollowActor"/>
+                            <int id="2" val="_FollowY"/>
+                            <get-xy comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                        </set-attribute>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="162">
+                    <group eventID="2" id="-1">
+                        <set-attribute comment="false" x="37" y="192">
+                            <ACTOR eid="var" id="0" vid="2"/>
+                            <int id="1" val="FollowActor"/>
+                            <int id="2" val="_FollowX"/>
+                            <get-xy comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="232">
+                            <ACTOR eid="var" id="0" vid="2"/>
+                            <int id="1" val="FollowActor"/>
+                            <int id="2" val="_FollowY"/>
+                            <get-xy comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                        </set-attribute>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

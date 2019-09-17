@@ -61,16 +61,13 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_25 extends ActorScript
+class ActorEvents_38 extends ActorScript
 {
-	public var _identity:String;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("identity", "_identity");
-		_identity = "";
 		
 	}
 	

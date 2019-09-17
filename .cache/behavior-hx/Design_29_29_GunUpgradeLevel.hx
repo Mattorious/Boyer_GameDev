@@ -61,21 +61,63 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_25 extends ActorScript
+class Design_29_29_GunUpgradeLevel extends ActorScript
 {
-	public var _identity:String;
+	public var _Gun0:Actor;
+	public var _Gun1:Actor;
+	public var _Gun2:Actor;
+	public var _Self:Actor;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("identity", "_identity");
-		_identity = "";
+		nameMap.set("Actor", "actor");
+		nameMap.set("Gun0", "_Gun0");
+		nameMap.set("Gun1", "_Gun1");
+		nameMap.set("Gun2", "_Gun2");
+		nameMap.set("Self", "_Self");
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		if(((Engine.engine.getGameAttribute("GunUpgradeLevel") : Float) == 0))
+		{
+			createRecycledActor(getActorType(33), actor.getX(), actor.getY(), Script.BACK);
+			_Gun0 = getLastCreatedActor();
+			_Self = actor;
+			_Gun0.setValue("FollowActor", "_FollowX", actor.getX());
+			_Gun0.setValue("FollowActor", "_FollowY", actor.getY());
+		}
+		if(((Engine.engine.getGameAttribute("GunUpgradeLevel") : Float) == 1))
+		{
+			createRecycledActor(getActorType(35), actor.getX(), actor.getY(), Script.BACK);
+			_Gun1 = getLastCreatedActor();
+			_Self = actor;
+			_Gun0.setValue("FollowActor", "_FollowX", actor.getX());
+			_Gun0.setValue("FollowActor", "_FollowY", actor.getY());
+		}
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(((Engine.engine.getGameAttribute("GunUpgradeLevel") : Float) == 0))
+				{
+					_Gun0.setValue("FollowActor", "_FollowX", actor.getX());
+					_Gun0.setValue("FollowActor", "_FollowY", actor.getY());
+				}
+				if(((Engine.engine.getGameAttribute("GunUpgradeLevel") : Float) == 1))
+				{
+					_Gun1.setValue("FollowActor", "_FollowX", actor.getX());
+					_Gun1.setValue("FollowActor", "_FollowY", actor.getY());
+				}
+			}
+		});
 		
 	}
 	
