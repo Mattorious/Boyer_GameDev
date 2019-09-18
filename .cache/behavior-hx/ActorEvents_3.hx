@@ -63,16 +63,34 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_3 extends ActorScript
 {
+	public var _randomAnim:Float;
+	public var _IdleAnim1:String;
+	public var _IdleAnim2:String;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("randomAnim", "_randomAnim");
+		_randomAnim = 0.0;
+		nameMap.set("IdleAnim1", "_IdleAnim1");
+		nameMap.set("IdleAnim2", "_IdleAnim2");
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		_randomAnim = randomInt(0, 1);
+		if((_randomAnim == 0))
+		{
+			actor.setAnimation(_IdleAnim1);
+		}
+		if((_randomAnim == 1))
+		{
+			actor.setAnimation(_IdleAnim2);
+		}
 		
 	}
 	

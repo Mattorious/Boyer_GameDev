@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="70">
+                            <group eventID="1" id="-1">
+                                <set-val-36-3 comment="false" x="48" y="100">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-36-3>
+                                <create-actor3 comment="false" x="48" y="125">
+                                    <actortype eid="42" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                    <int id="3" val="2"/>
+                                </create-actor3>
+                                <dolater comment="false" x="48" y="152">
+                                    <group eventID="1" id="-1">
+                                        <scene-change-through comment="false" x="59" y="179">
+                                            <scene eid="3" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="1"/>
+                                        </scene-change-through>
+                                    </group>
+                                    <int id="0" val="2"/>
+                                    <ACTOR eid="lastcreated" id="2"/>
+                                </dolater>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-36-3 comment="false" id="0" x="0" y="0"/>
+                                <false comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-val-36-1 comment="false" id="0" x="0" y="0"/>
+                        <get-val-36-2 comment="false" id="1" x="0" y="0"/>
+                    </moreeq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <set-font-new comment="false" x="37" y="65">
+                            <font eid="37" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="37" y="92">
+                            <int id="0" val="Invasion Halted"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                                <div comment="false" id="1" x="0" y="0">
+                                    <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                        <font eid="37" id="0"/>
+                                        <int id="1" val="Invasion Halted"/>
+                                    </get-font-width2-new>
+                                    <int id="1" val="2"/>
+                                </div>
+                            </minus>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                                <div comment="false" id="1" x="0" y="0">
+                                    <get-font-height2-new comment="false" id="0" x="0" y="0">
+                                        <font eid="37" id="0"/>
+                                    </get-font-height2-new>
+                                    <int id="1" val="2"/>
+                                </div>
+                            </minus>
+                        </draw-text>
+                    </group>
+                    <get-val-36-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

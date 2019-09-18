@@ -1,0 +1,16 @@
+#
+#Wed Sep 18 11:54:23 EDT 2019
+style=plain
+alphabet=
+color=\#00ff00
+stroke.color=\#000000
+shadow.y=1
+family=BELL.ttf
+shadow.x=1
+shadow.color=\#000000
+gradient.offset=0
+shadow.blur=0
+chars=all
+stroke.size=0
+antialias=true
+size=18

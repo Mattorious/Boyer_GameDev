@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="37" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="$"/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        </tostring>
+                    </str-combine>
+                    <int id="1" val="15"/>
+                    <int id="2" val="2"/>
+                </draw-text>
+                <if comment="false" x="26" y="102">
+                    <group eventID="3" id="-1">
+                        <set-font-new comment="false" x="37" y="132">
+                            <font eid="48" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="37" y="159">
+                            <get-val-34-4 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="15"/>
+                            <int id="2" val="-25"/>
+                        </draw-text>
+                        <set-val-34-1 comment="false" x="37" y="184">
+                            <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        </set-val-34-1>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-34-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="true"/>
+                    </eq>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-34-1 comment="false" x="26" y="40">
+                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                </set-val-34-1>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="5" id="-1">
+                        <set-val-34-4 comment="false" x="37" y="70">
+                            <tostring comment="false" id="0" x="0" y="0">
+                                <str-combine comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="+$"/>
+                                    <minus comment="false" id="1" x="0" y="0">
+                                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-34-1 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                </str-combine>
+                            </tostring>
+                        </set-val-34-4>
+                        <set-val-34-2 comment="false" x="37" y="115">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-34-2>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <get-val-34-1 comment="false" id="1" x="0" y="0"/>
+                    </more>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-att-bool comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <dolater comment="false" x="26" y="47">
+                    <group eventID="6" id="-1">
+                        <set-val-34-2 comment="false" x="37" y="74">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-34-2>
+                    </group>
+                    <int id="0" val=".5"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="2"/>
+            <true comment="false" id="1" x="0" y="0"/>
+        </event-att-bool>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>

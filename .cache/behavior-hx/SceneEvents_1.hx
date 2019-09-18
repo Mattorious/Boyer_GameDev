@@ -64,16 +64,37 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class SceneEvents_1 extends SceneScript
 {
+	public var _SceneFinished:Bool;
+	public var _NumberOfEnemies:Float;
+	public var _NumberKilled:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("SceneFinished", "_SceneFinished");
+		_SceneFinished = false;
+		nameMap.set("NumberOfEnemies", "_NumberOfEnemies");
+		_NumberOfEnemies = 0;
+		nameMap.set("NumberKilled", "_NumberKilled");
+		_NumberKilled = 0;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_NumberKilled >= _NumberOfEnemies))
+				{
+					
+				}
+			}
+		});
 		
 	}
 	

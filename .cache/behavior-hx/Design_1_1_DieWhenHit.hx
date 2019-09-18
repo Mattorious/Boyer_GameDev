@@ -66,6 +66,7 @@ class Design_1_1_DieWhenHit extends ActorScript
 	public var _health:Float;
 	public var _maxHealth:Float;
 	public var _killed:Bool;
+	public var _AmountToAdd:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -78,6 +79,8 @@ class Design_1_1_DieWhenHit extends ActorScript
 		_maxHealth = 0.0;
 		nameMap.set("killed", "_killed");
 		_killed = false;
+		nameMap.set("Amount To Add", "_AmountToAdd");
+		_AmountToAdd = 0.0;
 		
 	}
 	
@@ -97,12 +100,15 @@ class Design_1_1_DieWhenHit extends ActorScript
 				if(!(_health == 0))
 				{
 					_health = (_health - 1);
+					recycleActor(actor.getLastCollidedActor());
 				}
 				else
 				{
 					_killed = true;
+					Engine.engine.setGameAttribute("Money", ((Engine.engine.getGameAttribute("Money") : Float) + _AmountToAdd));
 					actor.shout("_customEvent_" + "HandleDeath");
 					recycleActor(actor.getLastCollidedActor());
+					setValueForScene("CheckForSceneEnd", "_NumberKilled", (asNumber(getValueForScene("CheckForSceneEnd", "_NumberKilled")) + 1));
 					recycleActor(actor);
 				}
 				runLater(1000 * 0.1, function(timeTask:TimedTask):Void
