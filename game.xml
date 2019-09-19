@@ -10,10 +10,10 @@
         <e enabled="false" id="test-flash"/>
     </exts>
     <bundles>
+        <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0"/>
         <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0"/>
         <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="" store="Windows Store" version="1.0"/>
         <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="App Store" version="1.0"/>
-        <bundle id="com.company.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0"/>
     </bundles>
     <scales>
         <scale detailed="1x" id="0" name="1x" size="1.0"/>
@@ -59,21 +59,36 @@
     </androidScales>
     <folders>
         <group desc="" id="0" name="Buttons" type="actortype">
+            <r id="64"/>
             <r id="49"/>
+            <r id="66"/>
             <r id="40"/>
+            <r id="59"/>
             <r id="44"/>
+            <r id="61"/>
             <r id="46"/>
+        </group>
+        <group desc="" id="1" name="Level 1 Aliens" type="actortype">
+            <r id="3"/>
+            <r id="5"/>
+            <r id="7"/>
+        </group>
+        <group desc="" id="2" name="Level 2 Aliens" type="actortype">
+            <r id="51"/>
+            <r id="53"/>
+            <r id="55"/>
         </group>
     </folders>
     <packs/>
     <groups>
         <group desc="" id="4" name="Alien"/>
-        <group desc="" id="5" name="Player Projectile"/>
+        <group desc="" id="5" name="Player Hit"/>
     </groups>
     <cgroups>
         <cgroup g1="0" g2="1"/>
+        <cgroup g1="0" g2="5"/>
         <cgroup g1="1" g2="3"/>
-        <cgroup g1="4" g2="5"/>
+        <cgroup g1="4" g2="4"/>
     </cgroups>
     <input>
         <key id="0" keyname="RIGHT" name="right" vk="39" vks="39"/>
@@ -91,8 +106,9 @@
     <props/>
     <attributes>
         <number cid="-1" id="4" name="Money" save="true" value="0.0"/>
+        <boolean cid="-1" id="6" name="GunUpgraded" save="true" value="false"/>
         <boolean cid="-1" id="2" name="Slide and Increase Speed" save="true" value="false"/>
-        <number cid="-1" id="3" name="GunUpgradeLevel" save="true" value="0.0"/>
+        <number cid="-1" id="5" name="Tank Speed" save="true" value="0.0"/>
         <boolean cid="-1" id="0" name="Move Right" save="true" value="true"/>
     </attributes>
     <collisions>
@@ -120,7 +136,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="3,5,7,9,11,13,15,16,17,18,19,21,25,27,28,29,30,32,33,35,37,38,40,42,44,46,48,49," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="3,5,7,9,11,13,15,16,17,18,19,21,25,27,28,29,30,32,33,35,37,40,42,44,46,48,49,51,53,55,57,59,61,63,64,66,68," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

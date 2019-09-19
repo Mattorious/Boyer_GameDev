@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <offscreen comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </screen-wh>
+                        <int id="1" val="20"/>
+                    </plus>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                    <screen-wh comment="false" id="3" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </screen-wh>
+                </offscreen>
+                <if comment="false" x="26" y="78">
+                    <group eventID="2" id="-1">
+                        <set-game-val-5 comment="false" x="37" y="108">
+                            <int id="0" val="8"/>
+                        </set-game-val-5>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

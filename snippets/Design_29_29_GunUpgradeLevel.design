@@ -3,104 +3,76 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <if comment="false" x="26" y="40">
-                    <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="37" y="70">
-                            <actortype eid="33" id="0"/>
-                            <get-xy comment="false" id="1" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="0"/>
-                            </get-xy>
-                            <get-xy comment="false" id="2" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="1"/>
-                            </get-xy>
-                            <int id="3" val="2"/>
-                        </create-actor3>
-                        <set-val-29-1 comment="false" x="37" y="110">
-                            <ACTOR eid="lastcreated" id="0"/>
-                        </set-val-29-1>
-                        <set-val-29-4 comment="false" x="37" y="137">
-                            <ACTOR eid="this" id="0"/>
-                        </set-val-29-4>
-                        <set-attribute comment="false" x="37" y="164">
-                            <ACTOR eid="var" id="0" vid="1"/>
-                            <int id="1" val="FollowActor"/>
-                            <int id="2" val="_FollowX"/>
-                            <get-xy comment="false" id="3" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="0"/>
-                            </get-xy>
-                        </set-attribute>
-                        <set-attribute comment="false" x="37" y="204">
-                            <ACTOR eid="var" id="0" vid="1"/>
-                            <int id="1" val="FollowActor"/>
-                            <int id="2" val="_FollowY"/>
-                            <get-xy comment="false" id="3" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="1"/>
-                            </get-xy>
-                        </set-attribute>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                <create-actor3 comment="false" x="26" y="40">
+                    <actortype eid="33" id="0"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
                         <int id="1" val="0"/>
-                    </eq>
-                </if>
-                <if comment="false" x="26" y="256">
-                    <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="37" y="286">
-                            <actortype eid="35" id="0"/>
-                            <get-xy comment="false" id="1" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="0"/>
-                            </get-xy>
-                            <get-xy comment="false" id="2" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="1"/>
-                            </get-xy>
-                            <int id="3" val="2"/>
-                        </create-actor3>
-                        <set-val-29-2 comment="false" x="37" y="326">
-                            <ACTOR eid="lastcreated" id="0"/>
-                        </set-val-29-2>
-                        <set-val-29-4 comment="false" x="37" y="353">
-                            <ACTOR eid="this" id="0"/>
-                        </set-val-29-4>
-                        <set-attribute comment="false" x="37" y="380">
-                            <ACTOR eid="var" id="0" vid="1"/>
-                            <int id="1" val="FollowActor"/>
-                            <int id="2" val="_FollowX"/>
-                            <get-xy comment="false" id="3" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="0"/>
-                            </get-xy>
-                        </set-attribute>
-                        <set-attribute comment="false" x="37" y="420">
-                            <ACTOR eid="var" id="0" vid="1"/>
-                            <int id="1" val="FollowActor"/>
-                            <int id="2" val="_FollowY"/>
-                            <get-xy comment="false" id="3" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="1"/>
-                            </get-xy>
-                        </set-attribute>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
                         <int id="1" val="1"/>
-                    </eq>
-                </if>
+                    </get-xy>
+                    <int id="3" val="2"/>
+                </create-actor3>
+                <set-val-29-1 comment="false" x="26" y="80">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-29-1>
+                <set-val-29-4 comment="false" x="26" y="107">
+                    <ACTOR eid="this" id="0"/>
+                </set-val-29-4>
+                <set-attribute comment="false" x="26" y="134">
+                    <ACTOR eid="var" id="0" vid="1"/>
+                    <int id="1" val="FollowActor"/>
+                    <int id="2" val="_FollowX"/>
+                    <get-xy comment="false" id="3" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="174">
+                    <ACTOR eid="var" id="0" vid="1"/>
+                    <int id="1" val="FollowActor"/>
+                    <int id="2" val="_FollowY"/>
+                    <get-xy comment="false" id="3" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </set-attribute>
             </group>
         </init>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <step comment="false" x="15" y="15">
+        <step comment="false" x="54" y="40">
             <group eventID="2" id="-1">
-                <if comment="false" x="26" y="40">
+                <set-val-29-5 comment="false" x="65" y="65">
+                    <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                </set-val-29-5>
+                <if comment="false" x="65" y="90">
                     <group eventID="2" id="-1">
-                        <set-attribute comment="false" x="37" y="70">
+                        <if comment="false" x="76" y="120">
+                            <group eventID="2" id="-1">
+                                <die comment="false" x="87" y="163">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                </die>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="TankHitByBullet"/>
+                                        <int id="2" val="_dead"/>
+                                    </get-attribute>
+                                    <true comment="false" id="1" x="0" y="0"/>
+                                </eq>
+                                <noteq comment="false" id="1" x="0" y="0">
+                                    <get-val-29-1 comment="false" id="0" x="0" y="0"/>
+                                    <null comment="false" id="1" x="0" y="0"/>
+                                </noteq>
+                            </and>
+                        </if>
+                        <set-attribute comment="false" x="76" y="202">
                             <ACTOR eid="var" id="0" vid="1"/>
                             <int id="1" val="FollowActor"/>
                             <int id="2" val="_FollowX"/>
@@ -109,7 +81,7 @@
                                 <int id="1" val="0"/>
                             </get-xy>
                         </set-attribute>
-                        <set-attribute comment="false" x="37" y="110">
+                        <set-attribute comment="false" x="76" y="242">
                             <ACTOR eid="var" id="0" vid="1"/>
                             <int id="1" val="FollowActor"/>
                             <int id="2" val="_FollowY"/>
@@ -120,13 +92,34 @@
                         </set-attribute>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="0"/>
+                        <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                        <false comment="false" id="1" x="0" y="0"/>
                     </eq>
                 </if>
-                <if comment="false" x="26" y="162">
+                <if comment="false" x="65" y="294">
                     <group eventID="2" id="-1">
-                        <set-attribute comment="false" x="37" y="192">
+                        <if comment="false" x="76" y="324">
+                            <group eventID="2" id="-1">
+                                <die comment="false" x="87" y="367">
+                                    <ACTOR eid="var" id="0" vid="2"/>
+                                </die>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <eq comment="false" id="0" x="0" y="0">
+                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="TankHitByBullet"/>
+                                        <int id="2" val="_dead"/>
+                                    </get-attribute>
+                                    <true comment="false" id="1" x="0" y="0"/>
+                                </eq>
+                                <noteq comment="false" id="1" x="0" y="0">
+                                    <get-val-29-2 comment="false" id="0" x="0" y="0"/>
+                                    <null comment="false" id="1" x="0" y="0"/>
+                                </noteq>
+                            </and>
+                        </if>
+                        <set-attribute comment="false" x="76" y="406">
                             <ACTOR eid="var" id="0" vid="2"/>
                             <int id="1" val="FollowActor"/>
                             <int id="2" val="_FollowX"/>
@@ -135,7 +128,7 @@
                                 <int id="1" val="0"/>
                             </get-xy>
                         </set-attribute>
-                        <set-attribute comment="false" x="37" y="232">
+                        <set-attribute comment="false" x="76" y="446">
                             <ACTOR eid="var" id="0" vid="2"/>
                             <int id="1" val="FollowActor"/>
                             <int id="2" val="_FollowY"/>
@@ -146,12 +139,82 @@
                         </set-attribute>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1"/>
+                        <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
                     </eq>
                 </if>
             </group>
         </step>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-att-bool comment="false" x="31" y="55">
+            <group eventID="3" id="-1">
+                <if comment="false" x="42" y="87">
+                    <group eventID="3" id="-1">
+                        <if comment="false" x="53" y="117">
+                            <group eventID="3" id="-1">
+                                <print comment="false" x="64" y="147">
+                                    <int id="0" val="Upgraded once"/>
+                                </print>
+                                <create-actor3 comment="false" x="64" y="167">
+                                    <actortype eid="35" id="0"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-xy>
+                                    <int id="3" val="2"/>
+                                </create-actor3>
+                                <set-val-29-2 comment="false" x="64" y="207">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                </set-val-29-2>
+                                <set-val-29-4 comment="false" x="64" y="234">
+                                    <ACTOR eid="this" id="0"/>
+                                </set-val-29-4>
+                                <set-attribute comment="false" x="64" y="261">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="FollowActor"/>
+                                    <int id="2" val="_FollowX"/>
+                                    <get-xy comment="false" id="3" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-xy>
+                                </set-attribute>
+                                <set-attribute comment="false" x="64" y="301">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="FollowActor"/>
+                                    <int id="2" val="_FollowY"/>
+                                    <get-xy comment="false" id="3" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-xy>
+                                </set-attribute>
+                                <die comment="false" x="64" y="341">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                </die>
+                                <set-val-29-6 comment="false" x="64" y="368">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-29-6>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-29-6 comment="false" id="0" x="0" y="0"/>
+                                <false comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-val-29-1 comment="false" id="0" x="0" y="0"/>
+                        <null comment="false" id="1" x="0" y="0"/>
+                    </noteq>
+                </if>
+            </group>
+            <int id="0" val="5"/>
+            <true comment="false" id="1" x="0" y="0"/>
+        </event-att-bool>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

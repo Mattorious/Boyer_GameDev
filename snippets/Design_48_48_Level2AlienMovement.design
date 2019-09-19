@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="165" y="235">
+            <group eventID="1" id="-1">
+                <if comment="false" x="176" y="260">
+                    <group eventID="1" id="-1">
+                        <setvel comment="false" x="187" y="298">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="180"/>
+                            <get-val-48-1 comment="false" id="2" x="0" y="0"/>
+                        </setvel>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <int id="1" val="2"/>
+                    </lesseq>
+                </if>
+                <if comment="false" x="176" y="342">
+                    <group eventID="1" id="-1">
+                        <setvel comment="false" x="187" y="385">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <get-val-48-1 comment="false" id="2" x="0" y="0"/>
+                        </setvel>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <get-wh comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-wh>
+                        </plus>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="2"/>
+                        </minus>
+                    </moreeq>
+                </if>
+                <if comment="false" x="176" y="429">
+                    <group eventID="1" id="-1">
+                        <print comment="false" x="187" y="467">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                        </print>
+                        <set-val-48-4 comment="false" x="187" y="500">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-48-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="15"/>
+                            </plus>
+                        </set-val-48-4>
+                        <set-dxy comment="false" x="187" y="530">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-xy>
+                        <get-val-48-4 comment="false" id="1" x="0" y="0"/>
+                    </moreeq>
+                </if>
+                <if comment="false" x="176" y="569">
+                    <group eventID="1" id="-1">
+                        <set-val-48-3 comment="false" x="187" y="612">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-48-3>
+                        <scene-reload-new comment="false" x="187" y="637">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0.3"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0.3"/>
+                        </scene-reload-new>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-xy>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </scene-wh>
+                            <int id="1" val="159"/>
+                        </minus>
+                    </moreeq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="17">
+        <setvel comment="false" x="748" y="154">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="180"/>
+            <get-val-48-1 comment="false" id="2" x="0" y="0"/>
+        </setvel>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <setvel comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-48-2 comment="false" id="1" x="0" y="0"/>
+                    <get-val-48-1 comment="false" id="2" x="0" y="0"/>
+                </setvel>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

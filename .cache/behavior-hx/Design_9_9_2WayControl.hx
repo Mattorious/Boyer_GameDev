@@ -76,7 +76,7 @@ class Design_9_9_2WayControl extends ActorScript
 	public var decel:Float;
 	public function _customEvent_moveRight():Void
 	{
-		actor.setXVelocity(topSpeed);
+		actor.setXVelocity((Engine.engine.getGameAttribute("Tank Speed") : Float));
 		dir = 4;
 		_MovementRandom = randomInt(1, 3);
 	}
@@ -87,7 +87,7 @@ class Design_9_9_2WayControl extends ActorScript
 	}
 	public function _customEvent_moveLeft():Void
 	{
-		actor.setXVelocity(-(topSpeed));
+		actor.setXVelocity(-((Engine.engine.getGameAttribute("Tank Speed") : Float)));
 		dir = 3;
 	}
 	
@@ -142,13 +142,13 @@ class Design_9_9_2WayControl extends ActorScript
 						actor.setYVelocity(0);
 					}
 				}
-				if((actor.getXVelocity() > topSpeed))
+				if((actor.getXVelocity() > (Engine.engine.getGameAttribute("Tank Speed") : Float)))
 				{
 					actor.setXVelocity(topSpeed);
 				}
 				else
 				{
-					if((actor.getXVelocity() < -(topSpeed)))
+					if((actor.getXVelocity() < -((Engine.engine.getGameAttribute("Tank Speed") : Float))))
 					{
 						actor.setXVelocity(-(topSpeed));
 					}

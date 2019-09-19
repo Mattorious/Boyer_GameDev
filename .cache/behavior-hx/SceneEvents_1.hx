@@ -75,14 +75,17 @@ class SceneEvents_1 extends SceneScript
 		nameMap.set("SceneFinished", "_SceneFinished");
 		_SceneFinished = false;
 		nameMap.set("NumberOfEnemies", "_NumberOfEnemies");
-		_NumberOfEnemies = 0;
+		_NumberOfEnemies = 0.0;
 		nameMap.set("NumberKilled", "_NumberKilled");
-		_NumberKilled = 0;
+		_NumberKilled = 0.0;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		Engine.engine.setGameAttribute("Tank Speed", 8);
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void

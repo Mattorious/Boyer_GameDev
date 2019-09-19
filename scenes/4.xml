@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="3" desc="" eventsnippetid="42" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="4" name="Level 2" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="0" green="0" red="0"/>
+        <background blendMode="normal" customScrollFactor="false" id="4" locked="true" name="Farm" opacity="100" order="3" rid="68" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,255,0" id="2" locked="false" name="Layer 2" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,0,255" id="1" locked="false" name="Layer 1" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="34" c="false" group="3" id="40" name="UIBox 34" order="0" sx="1.0" sy="1.0" x="526" y="445" z="1"/>
+        <actor a="0.0" aid="35" c="false" group="4" id="53" name="Alien Bug Lv2 35" order="1" sx="1.0" sy="1.0" x="280" y="-40" z="1"/>
+        <actor a="0.0" aid="36" c="false" group="4" id="53" name="Alien Bug Lv2 36" order="2" sx="1.0" sy="1.0" x="138" y="-43" z="1"/>
+        <actor a="0.0" aid="37" c="false" group="4" id="53" name="Alien Bug Lv2 37" order="3" sx="1.0" sy="1.0" x="215" y="-40" z="1"/>
+        <actor a="0.0" aid="38" c="false" group="4" id="53" name="Alien Bug Lv2 38" order="4" sx="1.0" sy="1.0" x="461" y="-38" z="1"/>
+        <actor a="0.0" aid="39" c="false" group="4" id="53" name="Alien Bug Lv2 39" order="5" sx="1.0" sy="1.0" x="400" y="-35" z="1"/>
+        <actor a="0.0" aid="42" c="false" group="4" id="53" name="Alien Bug Lv2 42" order="6" sx="1.0" sy="1.0" x="345" y="-23" z="1"/>
+        <actor a="0.0" aid="45" c="false" group="4" id="51" name="Alien Brainer Lv2 45" order="7" sx="1.0" sy="1.0" x="462" y="32" z="1"/>
+        <actor a="0.0" aid="46" c="false" group="4" id="51" name="Alien Brainer Lv2 46" order="8" sx="1.0" sy="1.0" x="405" y="37" z="1"/>
+        <actor a="0.0" aid="47" c="false" group="4" id="51" name="Alien Brainer Lv2 47" order="9" sx="1.0" sy="1.0" x="345" y="39" z="1"/>
+        <actor a="0.0" aid="48" c="false" group="4" id="51" name="Alien Brainer Lv2 48" order="10" sx="1.0" sy="1.0" x="285" y="36" z="1"/>
+        <actor a="0.0" aid="49" c="false" group="4" id="51" name="Alien Brainer Lv2 49" order="11" sx="1.0" sy="1.0" x="216" y="35" z="1"/>
+        <actor a="0.0" aid="50" c="false" group="4" id="51" name="Alien Brainer Lv2 50" order="12" sx="1.0" sy="1.0" x="136" y="36" z="1"/>
+        <actor a="0.0" aid="52" c="false" group="4" id="55" name="Alien Skull Lv2 52" order="13" sx="1.0" sy="1.0" x="539" y="38" z="1"/>
+        <actor a="0.0" aid="53" c="false" group="4" id="55" name="Alien Skull Lv2 53" order="14" sx="1.0" sy="1.0" x="539" y="-26" z="1"/>
+        <actor a="0.0" aid="54" c="false" group="4" id="55" name="Alien Skull Lv2 54" order="15" sx="1.0" sy="1.0" x="541" y="-90" z="1"/>
+        <actor a="0.0" aid="55" c="false" group="4" id="55" name="Alien Skull Lv2 55" order="16" sx="1.0" sy="1.0" x="50" y="43" z="1"/>
+        <actor a="0.0" aid="56" c="false" group="4" id="55" name="Alien Skull Lv2 56" order="17" sx="1.0" sy="1.0" x="50" y="-22" z="1"/>
+        <actor a="0.0" aid="57" c="false" group="4" id="55" name="Alien Skull Lv2 57" order="18" sx="1.0" sy="1.0" x="54" y="-88" z="1"/>
+        <actor a="0.0" aid="58" c="false" group="3" id="25" name="Player Tank 58" order="0" sx="1.0" sy="1.0" x="256" y="288" z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="36">
+            <prop id="1" list="0" val="0.0"/>
+            <prop id="2" list="0" val="26"/>
+            <prop id="3" list="0" val="false"/>
+        </s>
+    </snippets>
+    <terrain>
+        <p pts="4,0.0,32.0,0.0,0.0,640.0,0.0,640.0,32.0" x="0.0" y="416.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>

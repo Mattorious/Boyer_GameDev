@@ -6,7 +6,7 @@
                 <set-dxy comment="false" x="26" y="40">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="0"/>
-                    <get-val-9-11 comment="false" id="2" x="0" y="0"/>
+                    <get-game-val-5 comment="false" id="2" x="0" y="0"/>
                 </set-dxy>
                 <set-val-9-9 comment="false" x="26" y="72">
                     <int id="0" val="4"/>
@@ -21,7 +21,7 @@
             <int id="0" val="moveRight"/>
         </receive-message>
     </group>
-    <group eventID="1" id="10">
+    <group eventID="1" id="1">
         <if comment="false" x="160" y="237">
             <group eventID="1" id="-1">
                 <play-sound4 comment="false" x="171" y="267">
@@ -142,7 +142,7 @@
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
                         </get-dxy>
-                        <get-val-9-11 comment="false" id="1" x="0" y="0"/>
+                        <get-game-val-5 comment="false" id="1" x="0" y="0"/>
                     </more>
                 </if>
                 <else comment="false" x="26" y="454">
@@ -163,7 +163,7 @@
                                     <int id="1" val="0"/>
                                 </get-dxy>
                                 <neg comment="false" id="1" x="0" y="0">
-                                    <get-val-9-11 comment="false" id="0" x="0" y="0"/>
+                                    <get-game-val-5 comment="false" id="0" x="0" y="0"/>
                                 </neg>
                             </less>
                         </if>
@@ -200,7 +200,7 @@
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="0"/>
                     <neg comment="false" id="2" x="0" y="0">
-                        <get-val-9-11 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-5 comment="false" id="0" x="0" y="0"/>
                     </neg>
                 </set-dxy>
                 <set-val-9-9 comment="false" x="26" y="77">

@@ -65,7 +65,7 @@
                                 </str-combine>
                             </tostring>
                         </set-val-34-4>
-                        <set-val-34-2 comment="false" x="37" y="115">
+                        <set-val-34-2 comment="false" x="37" y="110">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-34-2>
                     </group>

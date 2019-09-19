@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <print comment="false" x="26" y="47">
+                    <int id="0" val="Tank hit by bullet"/>
+                </print>
+                <die comment="false" x="26" y="67">
+                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                </die>
+                <shake-start comment="false" x="26" y="99">
+                    <int id="0" val="2"/>
+                    <int id="1" val=".2"/>
+                </shake-start>
+                <if comment="false" x="26" y="119">
+                    <group eventID="1" id="-1">
+                        <set-val-52-2 comment="false" x="37" y="149">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-val-52-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-val-52-2>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-val-52-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </noteq>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actortype eid="57" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-52-5 comment="false" x="26" y="40">
+                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                </set-val-52-5>
+                <set-val-52-2 comment="false" x="26" y="65">
+                    <get-val-52-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-52-2>
+                <set-val-52-3 comment="false" x="26" y="90">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-52-3>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <set-val-52-3 comment="false" x="37" y="75">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-52-3>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-52-2 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-val-52-3 comment="false" id="0" x="0" y="0"/>
+                            <false comment="false" id="1" x="0" y="0"/>
+                        </eq>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-att-bool comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-dxy comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                </set-dxy>
+                <setanim comment="false" x="26" y="74">
+                    <ACTOR eid="this" id="0"/>
+                    <get-val-52-4 comment="false" id="1" x="0" y="0"/>
+                </setanim>
+                <actor-enabledisable-snippet comment="false" x="26" y="106">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="2 Way Control"/>
+                </actor-enabledisable-snippet>
+                <dolater comment="false" x="26" y="133">
+                    <group eventID="4" id="-1">
+                        <set-game-val-4 comment="false" x="37" y="160">
+                            <get-val-52-5 comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-4>
+                        <scene-reload-new comment="false" x="37" y="185">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0.3"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0.3"/>
+                        </scene-reload-new>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="3"/>
+            <true comment="false" id="1" x="0" y="0"/>
+        </event-att-bool>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

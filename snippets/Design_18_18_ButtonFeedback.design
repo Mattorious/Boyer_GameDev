@@ -3,10 +3,13 @@
     <group eventID="1" id="0">
         <event-mouse-enter-exit-actor comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <apply-filter comment="false" x="26" y="42">
+                <set-val-18-1 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-18-1>
+                <apply-filter comment="false" x="26" y="67">
                     <ACTOR eid="this" id="0"/>
                     <filter-tint comment="false" id="1" x="0" y="0">
-                        <color b="255" g="255" id="0" r="0"/>
+                        <color b="0" g="255" id="0" r="255"/>
                         <int id="1" val="50"/>
                     </filter-tint>
                 </apply-filter>
@@ -19,7 +22,10 @@
     <group eventID="2" id="0">
         <event-mouse-enter-exit-actor comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <clear-filter comment="false" x="26" y="42">
+                <set-val-18-1 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-18-1>
+                <clear-filter comment="false" x="26" y="67">
                     <ACTOR eid="this" id="0"/>
                 </clear-filter>
             </group>
@@ -28,4 +34,41 @@
         </event-mouse-enter-exit-actor>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <set-font-new comment="false" x="37" y="75">
+                            <font eid="48" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="37" y="102">
+                            <str-combine comment="false" id="0" x="0" y="0">
+                                <int id="0" val="$"/>
+                                <tostring comment="false" id="1" x="0" y="0">
+                                    <get-val-18-2 comment="false" id="0" x="0" y="0"/>
+                                </tostring>
+                            </str-combine>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-wh comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-wh>
+                                <int id="1" val="5"/>
+                            </plus>
+                            <int id="2" val="5"/>
+                        </draw-text>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-18-1 comment="false" id="0" x="0" y="0"/>
+                        <noteq comment="false" id="1" x="0" y="0">
+                            <get-val-18-2 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </noteq>
+                    </and>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

@@ -3,4 +3,5 @@
     <scene desc="" format="4.0.1" id="1" name="Level 1"/>
     <scene desc="" format="4.0.1" id="2" name="StartScreen"/>
     <scene desc="" format="4.0.1" id="3" name="EditTank"/>
+    <scene desc="" format="4.0.1" id="4" name="Level 2"/>
 </scenes>
