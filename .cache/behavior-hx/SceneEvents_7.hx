@@ -95,7 +95,7 @@ class SceneEvents_7 extends SceneScript
 		}, null);
 		runLater(1000 * 6, function(timeTask:TimedTask):Void
 		{
-			playSoundOnChannel(getSound(80), 0);
+			loopSoundOnChannel(getSound(80), 0);
 			setVolumeForChannel(50/100, 0);
 			switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(1, Utils.getColorRGB(0,0,0)), createFadeIn(1, Utils.getColorRGB(0,0,0)));
 		}, null);

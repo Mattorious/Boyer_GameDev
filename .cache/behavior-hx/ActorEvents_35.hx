@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,35 +61,18 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_5 extends SceneScript
+class ActorEvents_35 extends ActorScript
 {
-	public var _SceneFinished:Bool;
-	public var _NumberOfEnemies:Float;
-	public var _NumberKilled:Float;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("SceneFinished", "_SceneFinished");
-		_SceneFinished = false;
-		nameMap.set("NumberOfEnemies", "_NumberOfEnemies");
-		_NumberOfEnemies = 0.0;
-		nameMap.set("NumberKilled", "_NumberKilled");
-		_NumberKilled = 0.0;
+		super(actor);
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* ======================== When Creating ========================= */
-		stopSoundOnChannel(0);
-		setOffscreenTolerance((getScreenHeight() + 20), 0, 0, getScreenWidth());
-		if(((Engine.engine.getGameAttribute("Tank Speed") : Float) == 0))
-		{
-			Engine.engine.setGameAttribute("Tank Speed", 8);
-		}
 		
 	}
 	

@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,35 +61,51 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_5 extends SceneScript
+class Design_23_23 extends ActorScript
 {
-	public var _SceneFinished:Bool;
-	public var _NumberOfEnemies:Float;
-	public var _NumberKilled:Float;
+	public var action:String;
+	public var key:String;
+	public var _fireCount:Float;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("SceneFinished", "_SceneFinished");
-		_SceneFinished = false;
-		nameMap.set("NumberOfEnemies", "_NumberOfEnemies");
-		_NumberOfEnemies = 0.0;
-		nameMap.set("NumberKilled", "_NumberKilled");
-		_NumberKilled = 0.0;
+		super(actor);
+		nameMap.set("Actor", "actor");
+		nameMap.set("Action to Perform", "action");
+		action = "";
+		nameMap.set("Key", "key");
+		nameMap.set("fireCount", "_fireCount");
+		_fireCount = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		stopSoundOnChannel(0);
-		setOffscreenTolerance((getScreenHeight() + 20), 0, 0, getScreenWidth());
-		if(((Engine.engine.getGameAttribute("Tank Speed") : Float) == 0))
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
-			Engine.engine.setGameAttribute("Tank Speed", 8);
-		}
+			if(wrapper.enabled)
+			{
+				if((isKeyDown(key) && (_fireCount < 24)))
+				{
+					_fireCount = (_fireCount + 1);
+					if(((_fireCount % 2) == 0))
+					{
+						actor.shout("_customEvent_" + action);
+					}
+				}
+				if(isKeyReleased(key))
+				{
+					_fireCount = 0;
+				}
+				if((_fireCount >= 24))
+				{
+					stopSoundOnChannel(1);
+				}
+			}
+		});
 		
 	}
 	

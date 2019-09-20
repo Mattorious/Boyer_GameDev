@@ -3,7 +3,11 @@
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <offscreen comment="false" x="26" y="40">
+                <control-sound-channel comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                    <int id="1" val="0"/>
+                </control-sound-channel>
+                <offscreen comment="false" x="26" y="67">
                     <plus comment="false" id="0" x="0" y="0">
                         <screen-wh comment="false" id="0" x="0" y="0">
                             <int id="0" val="1"/>
@@ -16,9 +20,9 @@
                         <int id="0" val="0"/>
                     </screen-wh>
                 </offscreen>
-                <if comment="false" x="26" y="78">
+                <if comment="false" x="26" y="105">
                     <group eventID="2" id="-1">
-                        <set-game-val-5 comment="false" x="37" y="108">
+                        <set-game-val-5 comment="false" x="37" y="135">
                             <int id="0" val="8"/>
                         </set-game-val-5>
                     </group>

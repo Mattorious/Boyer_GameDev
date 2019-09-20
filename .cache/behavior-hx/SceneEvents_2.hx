@@ -84,6 +84,18 @@ class SceneEvents_2 extends SceneScript
 		loopSoundOnChannel(getSound(82), 0);
 		fadeInSoundOnChannel(0, 2);
 		
+		/* =========================== Keyboard =========================== */
+		addKeyStateListener("space", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && pressed)
+			{
+				if(isShiftDown())
+				{
+					switchScene(GameModel.get().scenes.get(5).getID(), null, createCrossfadeTransition(1));
+				}
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

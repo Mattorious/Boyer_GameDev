@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,35 +61,67 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_5 extends SceneScript
+class Design_18_18_ButtonFeedback extends ActorScript
 {
-	public var _SceneFinished:Bool;
-	public var _NumberOfEnemies:Float;
-	public var _NumberKilled:Float;
+	public var _MouseisOver:Bool;
+	public var _CostToShow:Float;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("SceneFinished", "_SceneFinished");
-		_SceneFinished = false;
-		nameMap.set("NumberOfEnemies", "_NumberOfEnemies");
-		_NumberOfEnemies = 0.0;
-		nameMap.set("NumberKilled", "_NumberKilled");
-		_NumberKilled = 0.0;
+		super(actor);
+		nameMap.set("Actor", "actor");
+		nameMap.set("Mouse is Over", "_MouseisOver");
+		_MouseisOver = false;
+		nameMap.set("CostToShow", "_CostToShow");
+		_CostToShow = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		stopSoundOnChannel(0);
-		setOffscreenTolerance((getScreenHeight() + 20), 0, 0, getScreenWidth());
-		if(((Engine.engine.getGameAttribute("Tank Speed") : Float) == 0))
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
-			Engine.engine.setGameAttribute("Tank Speed", 8);
-		}
+			if(wrapper.enabled && 1 == mouseState)
+			{
+				_MouseisOver = true;
+				actor.setFilter([createTintFilter(Utils.getColorRGB(255,255,0), 50/100)]);
+			}
+		});
+		
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && 3 == mouseState)
+			{
+				playSoundOnChannel(getSound(86), 2);
+			}
+		});
+		
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && -1 == mouseState)
+			{
+				_MouseisOver = false;
+				actor.clearFilters();
+			}
+		});
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_MouseisOver && !(_CostToShow == 0)))
+				{
+					g.setFont(getFont(48));
+					g.drawString("" + (("$") + (("" + _CostToShow))), ((actor.getWidth()) + 5), 5);
+				}
+			}
+		});
 		
 	}
 	
