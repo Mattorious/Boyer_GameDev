@@ -139,7 +139,10 @@
                 </comment-long>
                 <if comment="false" x="26" y="1112">
                     <group eventID="-1" id="-1">
-                        <scene-reload-new comment="false" x="37" y="1155">
+                        <set-game-val-4 comment="false" x="37" y="1155">
+                            <get-val-46-4 comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-4>
+                        <scene-reload-new comment="false" x="37" y="1180">
                             <int id="0" val="0"/>
                             <int id="1" val="0.3"/>
                             <int id="2" val="0"/>
@@ -163,13 +166,26 @@
         </step>
     </group>
     <group eventID="1" id="-1">
-        <eq comment="false" x="701" y="532">
-            <int id="0" val=""/>
-            <int id="1" val="2"/>
-        </eq>
         <eq comment="false" x="453" y="626">
             <int id="0" val=""/>
             <int id="1" val=""/>
         </eq>
+        <eq comment="false" x="701" y="532">
+            <int id="0" val=""/>
+            <int id="1" val="2"/>
+        </eq>
     </group>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-46-4 comment="false" x="26" y="40">
+                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                </set-val-46-4>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="1">
+        <get-val-46-4 comment="false" x="1022" y="280"/>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>

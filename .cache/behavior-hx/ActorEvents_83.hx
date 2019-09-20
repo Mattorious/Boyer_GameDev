@@ -61,58 +61,18 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_18_18_ButtonFeedback extends ActorScript
+class ActorEvents_83 extends ActorScript
 {
-	public var _MouseisOver:Bool;
-	public var _CostToShow:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Actor", "actor");
-		nameMap.set("Mouse is Over", "_MouseisOver");
-		_MouseisOver = false;
-		nameMap.set("CostToShow", "_CostToShow");
-		_CostToShow = 0.0;
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && 1 == mouseState)
-			{
-				_MouseisOver = true;
-				actor.setFilter([createTintFilter(Utils.getColorRGB(255,255,0), 50/100)]);
-			}
-		});
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && -1 == mouseState)
-			{
-				_MouseisOver = false;
-				actor.clearFilters();
-			}
-		});
-		
-		/* ========================= When Drawing ========================= */
-		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((_MouseisOver && !(_CostToShow == 0)))
-				{
-					g.setFont(getFont(48));
-					g.drawString("" + (("$") + (("" + _CostToShow))), ((actor.getWidth()) + 5), 5);
-				}
-			}
-		});
 		
 	}
 	

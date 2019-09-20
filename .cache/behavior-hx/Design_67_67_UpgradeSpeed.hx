@@ -86,11 +86,10 @@ class Design_67_67_UpgradeSpeed extends ActorScript
 		{
 			if(wrapper.enabled && 3 == mouseState)
 			{
-				if((_pressedonce == false))
+				if((getValueForScene("Upgrade Screen", "_TankUpgraded") == false))
 				{
 					setValueForScene("Upgrade Screen", "_TankUpgraded", true);
 					setValueForScene("Upgrade Screen", "_TotalCost", (_cost + asNumber(getValueForScene("Upgrade Screen", "_TotalCost"))));
-					_pressedonce = true;
 				}
 			}
 		});

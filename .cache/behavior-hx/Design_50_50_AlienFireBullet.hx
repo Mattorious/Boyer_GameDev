@@ -99,6 +99,7 @@ class Design_50_50_AlienFireBullet extends ActorScript
 					runLater(1000 * _randominterval, function(timeTask:TimedTask):Void
 					{
 						createRecycledActor(getActorType(57), (actor.getX() + ((actor.getWidth()) / 2)), (actor.getY() + ((actor.getHeight()) / 2)), Script.FRONT);
+						playSound(getSound(81));
 						_randominterval = randomFloatBetween(2, 8);
 						_fireagain = true;
 					}, actor);

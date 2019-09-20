@@ -61,45 +61,28 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_23_23 extends ActorScript
+class Design_70_70_ClearUpgrades extends ActorScript
 {
-	public var action:String;
-	public var key:String;
-	public var _fireCount:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
 		nameMap.set("Actor", "actor");
-		nameMap.set("Action to Perform", "action");
-		action = "";
-		nameMap.set("Key", "key");
-		nameMap.set("fireCount", "_fireCount");
-		_fireCount = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled)
+			if(wrapper.enabled && 3 == mouseState)
 			{
-				if((isKeyDown(key) && (_fireCount < 24)))
-				{
-					_fireCount = (_fireCount + 1);
-					if(((_fireCount % 2) == 0))
-					{
-						actor.shout("_customEvent_" + action);
-					}
-				}
-				if(isKeyReleased(key))
-				{
-					_fireCount = 0;
-				}
+				setValueForScene("Upgrade Screen", "_TotalCost", 0);
+				setValueForScene("Upgrade Screen", "_TankUpgraded", false);
+				setValueForScene("Upgrade Screen", "_gunupgraded", false);
 			}
 		});
 		

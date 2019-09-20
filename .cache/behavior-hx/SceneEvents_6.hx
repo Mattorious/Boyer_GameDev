@@ -43,6 +43,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -61,22 +62,19 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_55_55_UpgradeWeapon extends ActorScript
+class SceneEvents_6 extends SceneScript
 {
-	public var _cost:Float;
-	public var _PurchaseButton:Actor;
-	public var _ButtonClicked:Bool;
+	public var _Line1:Bool;
+	public var _Line2:Bool;
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
-		nameMap.set("Actor", "actor");
-		nameMap.set("cost", "_cost");
-		_cost = 0.0;
-		nameMap.set("Purchase Button", "_PurchaseButton");
-		nameMap.set("ButtonClicked", "_ButtonClicked");
-		_ButtonClicked = false;
+		super();
+		nameMap.set("Line 1", "_Line1");
+		_Line1 = false;
+		nameMap.set("Line 2", "_Line2");
+		_Line2 = false;
 		
 	}
 	
@@ -84,18 +82,36 @@ class Design_55_55_UpgradeWeapon extends ActorScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		actor.setValue("ButtonFeedback", "_CostToShow", _cost);
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		fadeSoundOnChannel(0, 2, 40);
+		runLater(1000 * 2, function(timeTask:TimedTask):Void
 		{
-			if(wrapper.enabled && 3 == mouseState)
+			_Line1 = true;
+			playSound(getSound(79));
+		}, null);
+		runLater(1000 * 4, function(timeTask:TimedTask):Void
+		{
+			_Line2 = true;
+			playSound(getSound(79));
+		}, null);
+		runLater(1000 * 6, function(timeTask:TimedTask):Void
+		{
+			switchScene(GameModel.get().scenes.get(2).getID(), createFadeOut(1, Utils.getColorRGB(0,0,0)), createFadeIn(1, Utils.getColorRGB(0,0,0)));
+		}, null);
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
 			{
-				if((getValueForScene("Upgrade Screen", "_gunupgraded") == false))
+				if(_Line1)
 				{
-					setValueForScene("Upgrade Screen", "_TotalCost", (_cost + asNumber(getValueForScene("Upgrade Screen", "_TotalCost"))));
-					setValueForScene("Upgrade Screen", "_gunupgraded", true);
-					trace((("Setting cost to $") + (("" + getValueForScene("Upgrade Screen", "_TotalCost")))));
+					g.setFont(getFont(37));
+					g.drawString("" + "The incursion has been checked.", ((getScreenWidth() / 2) - (getFont(37).font.getTextWidth("The incursion has been checked", getFont(37).letterSpacing)/Engine.SCALE / 2)), (((getScreenHeight() / 2) - (getFont(37).getHeight()/Engine.SCALE / 2)) - 40));
+				}
+				if(_Line2)
+				{
+					g.setFont(getFont(37));
+					g.drawString("" + "Your service has been noted.", ((getScreenWidth() / 2) - (getFont(37).font.getTextWidth("Your service has been noted.", getFont(37).letterSpacing)/Engine.SCALE / 2)), (((getScreenHeight() / 2) - (getFont(37).getHeight()/Engine.SCALE / 2)) - 0));
 				}
 			}
 		});

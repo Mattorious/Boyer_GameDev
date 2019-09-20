@@ -65,6 +65,7 @@ class Design_46_46 extends ActorScript
 {
 	public var _MovementSpeed:Float;
 	public var _SlidandIncreasedforSelf:Bool;
+	public var _StartMoney:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -75,11 +76,16 @@ class Design_46_46 extends ActorScript
 		_MovementSpeed = 2.0;
 		nameMap.set("Slid and Increased for Self", "_SlidandIncreasedforSelf");
 		_SlidandIncreasedforSelf = false;
+		nameMap.set("Start Money", "_StartMoney");
+		_StartMoney = 0.0;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		_StartMoney = (Engine.engine.getGameAttribute("Money") : Float);
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
@@ -133,6 +139,7 @@ at a constant rate. */
 				/* They reached the end. You die. */
 				if((actor.getY() >= (getSceneHeight() - 159)))
 				{
+					Engine.engine.setGameAttribute("Money", _StartMoney);
 					reloadCurrentScene(createFadeOut(0.3), createFadeIn(0.3));
 				}
 			}

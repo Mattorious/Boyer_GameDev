@@ -13,17 +13,20 @@
         <actor a="0.0" aid="3" c="false" group="3" id="44" name="Weapon Upgrade 3" order="0" sx="1.0" sy="1.0" x="1" y="1" z="1"/>
         <actor a="0.0" aid="4" c="false" group="3" id="46" name="Body Upgrade Button 4" order="1" sx="1.0" sy="1.0" x="1" y="36" z="1"/>
         <actor a="0.0" aid="5" c="false" group="3" id="40" name="UIBox 5" order="2" sx="1.0" sy="1.0" x="526" y="1" z="1"/>
-        <actor a="0.0" aid="6" c="false" group="3" id="59" name="Purchase 6" order="3" sx="1.0" sy="1.0" x="115" y="443" z="1"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="59" name="Purchase 6" order="3" sx="1.0" sy="1.0" x="228" y="444" z="1"/>
         <actor a="0.0" aid="7" c="false" group="3" id="61" name="CostTotaler 7" order="4" sx="1.0" sy="1.0" x="0" y="444" z="1"/>
         <actor a="0.0" aid="8" c="false" group="3" id="64" name="UpgradeText 8" order="5" sx="1.0" sy="1.0" x="224" y="17" z="1"/>
         <actor a="0.0" aid="9" c="false" group="3" id="66" name="Next Level 9" order="6" sx="1.0" sy="1.0" x="525" y="444" z="1"/>
         <actor a="0.0" aid="10" c="false" group="3" id="25" name="Player Tank 10" order="7" sx="1.0" sy="1.0" x="256" y="192" z="1"/>
+        <actor a="0.0" aid="11" c="false" group="3" id="83" name="ClearButton 11" order="8" sx="1.0" sy="1.0" x="114" y="444" z="1"/>
     </actors>
     <snippets>
         <s enabled="true" id="57">
             <prop id="1" list="0" val="0"/>
             <prop id="2" list="0" val="0"/>
             <prop id="3" list="0" val="0"/>
+            <prop id="4" list="0" val="false"/>
+            <prop id="5" list="0" val="false"/>
         </s>
     </snippets>
     <terrain/>

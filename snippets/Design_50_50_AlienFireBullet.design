@@ -61,20 +61,24 @@
                                     </plus>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <set-val-50-3 comment="false" x="48" y="152">
+                                <play-sound4 comment="false" x="48" y="152">
+                                    <int id="0" val="0"/>
+                                    <sound eid="81" id="1"/>
+                                </play-sound4>
+                                <set-val-50-3 comment="false" x="48" y="179">
                                     <randomfloat comment="false" id="0" x="0" y="0">
                                         <int id="0" val="2"/>
                                         <int id="1" val="8"/>
                                     </randomfloat>
                                 </set-val-50-3>
-                                <set-val-50-4 comment="false" x="48" y="177">
+                                <set-val-50-4 comment="false" x="48" y="204">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-50-4>
                             </group>
                             <get-val-50-3 comment="false" id="0" x="0" y="0"/>
                             <ACTOR eid="this" id="2"/>
                         </dolater>
-                        <set-val-50-4 comment="false" x="37" y="214">
+                        <set-val-50-4 comment="false" x="37" y="241">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-50-4>
                     </group>

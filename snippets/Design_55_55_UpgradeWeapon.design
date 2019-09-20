@@ -32,12 +32,12 @@
                                 </tostring>
                             </str-combine>
                         </print>
-                        <set-val-55-3 comment="false" x="37" y="162">
-                            <true comment="false" id="0" x="0" y="0"/>
-                        </set-val-55-3>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-val-55-3 comment="false" id="0" x="0" y="0"/>
+                        <scene-get-attribute comment="false" id="0" x="0" y="0">
+                            <int id="0" val="Upgrade Screen"/>
+                            <int id="1" val="_gunupgraded"/>
+                        </scene-get-attribute>
                         <false comment="false" id="1" x="0" y="0"/>
                     </eq>
                 </if>
@@ -52,11 +52,6 @@
             <int id="1" val="_GunLevel"/>
             <int id="2" val="1"/>
         </scene-set-attribute>
-    </group>
-    <group eventID="3" id="2">
-        <print comment="false" x="61" y="214">
-            <int id="0" val=""/>
-        </print>
     </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">

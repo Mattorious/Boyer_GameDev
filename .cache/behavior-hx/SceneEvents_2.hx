@@ -75,6 +75,15 @@ class SceneEvents_2 extends SceneScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		Engine.engine.setGameAttribute("Money", 0);
+		Engine.engine.setGameAttribute("Tank Speed", 8);
+		Engine.engine.setGameAttribute("GunUpgraded", false);
+		Engine.engine.setGameAttribute("Tank Speed Upgraded", false);
+		stopSoundOnChannel(0);
+		loopSoundOnChannel(getSound(82), 0);
+		fadeInSoundOnChannel(0, 2);
+		
 	}
 	
 	override public function forwardMessage(msg:String)

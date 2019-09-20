@@ -21,12 +21,12 @@
                                 </scene-get-attribute>
                             </plus>
                         </scene-set-attribute>
-                        <set-val-67-1 comment="false" x="37" y="127">
-                            <true comment="false" id="0" x="0" y="0"/>
-                        </set-val-67-1>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
-                        <get-val-67-1 comment="false" id="0" x="0" y="0"/>
+                        <scene-get-attribute comment="false" id="0" x="0" y="0">
+                            <int id="0" val="Upgrade Screen"/>
+                            <int id="1" val="_TankUpgraded"/>
+                        </scene-get-attribute>
                         <false comment="false" id="1" x="0" y="0"/>
                     </eq>
                 </if>

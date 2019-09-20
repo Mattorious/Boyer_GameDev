@@ -359,6 +359,24 @@
         <tile collision="-1" data="" durations="100" frames="4" id="2" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="5" id="5" order="-1"/>
     </tileset>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="69" fixedrot="false" fric="0.2" gid="3" id="83" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="ClearButton" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="84" static="false">
+        <snippets>
+            <s enabled="true" id="18">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+            </s>
+            <s enabled="true" id="70">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="84" name="ClearButton" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="35" id="0" loop="true" name="Animation 0" numframes="1" originx="57" originy="17" sync="false" version="2" width="114">
+            <poly data="4,0,0,114,0,114,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <music atlasID="0" desc="Made by clicking a nintendo switch button." id="86" loop="true" name="Click" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="54" fixedrot="false" fric="0.2" gid="3" id="61" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="CostTotaler" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="62" static="false">
         <snippets/>
     </actor>
@@ -422,7 +440,7 @@
                 <prop id="4" list="0" val="9"/>
                 <prop id="5" list="0" val="90"/>
                 <prop id="6" list="0" val="90"/>
-                <prop id="7" list="0" val="-1"/>
+                <prop id="7" list="0" val="No Sound"/>
                 <prop id="8" list="0" val="true"/>
                 <prop id="9" list="0" val=""/>
                 <prop id="10" list="0" val="false"/>
@@ -464,6 +482,7 @@
             <poly data="4,0,0,110,0,110,197,0,197" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="Made by combining noise made by scraping a metal mesh and a generated tone in Audition. Effect accomplished by removing audio gaps between peaks, EQ compression &amp; the audio phaser effect until it sounded &quot;sci-fi-y.&quot;" id="85" loop="true" name="Laser" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="26" fixedrot="false" fric="0.2" gid="3" id="30" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Logo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="31" static="false">
         <snippets/>
     </actor>
@@ -608,6 +627,7 @@
             <poly data="4,0,0,114,0,114,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="81" loop="true" name="Squirt" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="15" loop="true" name="Squish" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="60" fixedrot="false" fric="0.2" gid="3" id="69" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Start Game" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="70" static="false">
         <snippets>
@@ -654,4 +674,5 @@
             <poly data="4,0,0,114,0,114,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="82" loop="true" name="Wind" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
 </pack>

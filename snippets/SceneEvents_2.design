@@ -1,2 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-game-val-4 comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </set-game-val-4>
+                <set-game-val-5 comment="false" x="26" y="60">
+                    <int id="0" val="8"/>
+                </set-game-val-5>
+                <set-game-val-6 comment="false" x="26" y="80">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-game-val-6>
+                <set-game-val-7 comment="false" x="26" y="105">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-game-val-7>
+                <control-sound-channel comment="false" x="26" y="130">
+                    <int id="0" val="0"/>
+                    <int id="1" val="0"/>
+                </control-sound-channel>
+                <play-sound-channel comment="false" x="26" y="157">
+                    <int id="0" val="1"/>
+                    <sound eid="82" id="1"/>
+                    <int id="2" val="0"/>
+                </play-sound-channel>
+                <fade-sound-channel comment="false" x="26" y="184">
+                    <int id="0" val="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="2"/>
+                </fade-sound-channel>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

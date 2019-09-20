@@ -3,12 +3,17 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <dolater comment="false" x="26" y="40">
+                <fade-sound-channel-percent comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                    <int id="1" val="2"/>
+                    <int id="2" val="40"/>
+                </fade-sound-channel-percent>
+                <dolater comment="false" x="26" y="60">
                     <group eventID="1" id="-1">
-                        <set-val-65-1 comment="false" x="37" y="67">
+                        <set-val-65-1 comment="false" x="37" y="87">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-65-1>
-                        <play-sound4 comment="false" x="37" y="92">
+                        <play-sound4 comment="false" x="37" y="112">
                             <int id="0" val="0"/>
                             <sound eid="79" id="1"/>
                         </play-sound4>
@@ -16,12 +21,12 @@
                     <int id="0" val="2"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <dolater comment="false" x="26" y="131">
+                <dolater comment="false" x="26" y="151">
                     <group eventID="1" id="-1">
-                        <set-val-65-2 comment="false" x="37" y="158">
+                        <set-val-65-2 comment="false" x="37" y="178">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-65-2>
-                        <play-sound4 comment="false" x="37" y="183">
+                        <play-sound4 comment="false" x="37" y="203">
                             <int id="0" val="0"/>
                             <sound eid="79" id="1"/>
                         </play-sound4>
@@ -29,9 +34,9 @@
                     <int id="0" val="4"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <dolater comment="false" x="26" y="222">
+                <dolater comment="false" x="26" y="242">
                     <group eventID="1" id="-1">
-                        <scene-change-color comment="false" x="37" y="249">
+                        <scene-change-color comment="false" x="37" y="269">
                             <scene eid="2" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="1"/>

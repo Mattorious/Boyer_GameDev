@@ -49,6 +49,18 @@
                         <control eid="var" id="1" vid="2"/>
                     </keystate>
                 </if>
+                <if comment="false" x="26" y="269">
+                    <group eventID="1" id="-1">
+                        <control-sound-channel comment="false" x="37" y="299">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </control-sound-channel>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-val-23-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="24"/>
+                    </moreeq>
+                </if>
             </group>
         </step>
     </group>
