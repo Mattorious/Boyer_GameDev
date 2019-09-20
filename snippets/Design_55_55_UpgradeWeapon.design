@@ -16,7 +16,12 @@
                                 </scene-get-attribute>
                             </plus>
                         </scene-set-attribute>
-                        <print comment="false" x="37" y="102">
+                        <scene-set-attribute comment="false" x="37" y="102">
+                            <int id="0" val="Upgrade Screen"/>
+                            <int id="1" val="_gunupgraded"/>
+                            <true comment="false" id="2" x="0" y="0"/>
+                        </scene-set-attribute>
+                        <print comment="false" x="37" y="127">
                             <str-combine comment="false" id="0" x="0" y="0">
                                 <int id="0" val="Setting cost to $"/>
                                 <tostring comment="false" id="1" x="0" y="0">
@@ -27,7 +32,7 @@
                                 </tostring>
                             </str-combine>
                         </print>
-                        <set-val-55-3 comment="false" x="37" y="137">
+                        <set-val-55-3 comment="false" x="37" y="162">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-55-3>
                     </group>
@@ -41,14 +46,14 @@
             <int id="1" val="2"/>
         </event-mouse-enter-exit-actor>
     </group>
-    <group eventID="3" id="2">
+    <group eventID="3" id="1">
         <scene-set-attribute comment="false" x="571" y="278">
             <int id="0" val="Upgrade Screen"/>
             <int id="1" val="_GunLevel"/>
             <int id="2" val="1"/>
         </scene-set-attribute>
     </group>
-    <group eventID="3" id="6">
+    <group eventID="3" id="2">
         <print comment="false" x="61" y="214">
             <int id="0" val=""/>
         </print>

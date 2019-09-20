@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="1" id="-1">
+                        <scene-set-attribute comment="false" x="37" y="72">
+                            <int id="0" val="Upgrade Screen"/>
+                            <int id="1" val="_TankUpgraded"/>
+                            <true comment="false" id="2" x="0" y="0"/>
+                        </scene-set-attribute>
+                        <scene-set-attribute comment="false" x="37" y="97">
+                            <int id="0" val="Upgrade Screen"/>
+                            <int id="1" val="_TotalCost"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-val-67-2 comment="false" id="0" x="0" y="0"/>
+                                <scene-get-attribute comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="Upgrade Screen"/>
+                                    <int id="1" val="_TotalCost"/>
+                                </scene-get-attribute>
+                            </plus>
+                        </scene-set-attribute>
+                        <set-val-67-1 comment="false" x="37" y="127">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-67-1>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-67-1 comment="false" id="0" x="0" y="0"/>
+                        <false comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="2"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

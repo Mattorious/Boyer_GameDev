@@ -74,6 +74,9 @@ class ActorEvents_51 extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		actor.setFilter([createHueFilter(90)]);
+		
 	}
 	
 	override public function forwardMessage(msg:String)

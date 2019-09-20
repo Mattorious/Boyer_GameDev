@@ -9,9 +9,9 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="19" name="b_start 1" order="0" sx="1.0" sy="1.0" x="64" y="256" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="21" name="b_quit 2" order="1" sx="1.0" sy="1.0" x="64" y="320" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="30" name="Logo 3" order="2" sx="1.29375" sy="1.29375" x="48" y="29" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="30" name="Logo 3" order="0" sx="1.29375" sy="1.29375" x="48" y="23" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="69" name="Start Game 4" order="1" sx="1.0" sy="1.0" x="40" y="207" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="71" name="Quit Game 5" order="2" sx="1.0" sy="1.0" x="40" y="251" z="0"/>
     </actors>
     <snippets/>
     <terrain/>

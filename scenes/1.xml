@@ -45,6 +45,7 @@
             <prop id="1" list="0" val="0.0"/>
             <prop id="2" list="0" val="26"/>
             <prop id="3" list="0" val="false"/>
+            <prop id="4" list="0" val="3"/>
         </s>
     </snippets>
     <terrain>

@@ -9,13 +9,17 @@
                 <die comment="false" x="26" y="67">
                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                 </die>
-                <shake-start comment="false" x="26" y="99">
+                <play-sound4 comment="false" x="26" y="99">
+                    <int id="0" val="0"/>
+                    <sound eid="78" id="1"/>
+                </play-sound4>
+                <shake-start comment="false" x="26" y="126">
                     <int id="0" val="2"/>
                     <int id="1" val=".2"/>
                 </shake-start>
-                <if comment="false" x="26" y="119">
+                <if comment="false" x="26" y="146">
                     <group eventID="1" id="-1">
-                        <set-val-52-2 comment="false" x="37" y="149">
+                        <set-val-52-2 comment="false" x="37" y="176">
                             <minus comment="false" id="0" x="0" y="0">
                                 <get-val-52-2 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>

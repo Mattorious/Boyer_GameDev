@@ -2,17 +2,18 @@
 <groups>
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
-                <comment-wrapper comment="false" x="26" y="40">
-                    <group eventID="1" id="-1">
-                        <set-game-val-4 comment="false" x="37" y="60">
-                            <int id="0" val="5000"/>
-                        </set-game-val-4>
-                    </group>
-                    <int id="0" val="DEBUG"/>
-                </comment-wrapper>
-            </group>
+            <group eventID="1" id="-1"/>
         </init>
+    </group>
+    <group eventID="1" id="1">
+        <comment-wrapper comment="false" x="459" y="179">
+            <group eventID="1" id="-1">
+                <set-game-val-4 comment="false" x="470" y="199">
+                    <int id="0" val="5000"/>
+                </set-game-val-4>
+            </group>
+            <int id="0" val="DEBUG"/>
+        </comment-wrapper>
     </group>
     <group eventID="1" id="-1"/>
 </groups>

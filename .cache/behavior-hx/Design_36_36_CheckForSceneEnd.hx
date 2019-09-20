@@ -67,6 +67,7 @@ class Design_36_36_CheckForSceneEnd extends SceneScript
 	public var _NumberKilled:Float;
 	public var _NumberOfEnemies:Float;
 	public var _sceneEnded:Bool;
+	public var _NextScene:Scene;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
@@ -78,6 +79,7 @@ class Design_36_36_CheckForSceneEnd extends SceneScript
 		_NumberOfEnemies = 0.0;
 		nameMap.set("sceneEnded", "_sceneEnded");
 		_sceneEnded = false;
+		nameMap.set("NextScene", "_NextScene");
 		
 	}
 	
@@ -97,7 +99,7 @@ class Design_36_36_CheckForSceneEnd extends SceneScript
 						createRecycledActor(getActorType(42), 0, 0, Script.BACK);
 						runLater(1000 * 2, function(timeTask:TimedTask):Void
 						{
-							switchScene(GameModel.get().scenes.get(3).getID(), null, createCrossfadeTransition(1));
+							switchScene(_NextScene.getID(), null, createCrossfadeTransition(1));
 						}, null);
 					}
 				}

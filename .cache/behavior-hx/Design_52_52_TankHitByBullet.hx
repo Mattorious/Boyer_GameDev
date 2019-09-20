@@ -104,6 +104,7 @@ class Design_52_52_TankHitByBullet extends ActorScript
 			{
 				trace("Tank hit by bullet");
 				recycleActor(event.otherActor);
+				playSound(getSound(78));
 				startShakingScreen(2 / 100, .2);
 				if(!(_trueHealth == 0))
 				{

@@ -75,15 +75,6 @@ class SceneEvents_2 extends SceneScript
 	override public function init()
 	{
 		
-		/* ============================ Click ============================= */
-		addMousePressedListener(function(list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				switchScene(GameModel.get().scenes.get(1).getID(), null, createCrossfadeTransition(.5));
-			}
-		});
-		
 	}
 	
 	override public function forwardMessage(msg:String)
