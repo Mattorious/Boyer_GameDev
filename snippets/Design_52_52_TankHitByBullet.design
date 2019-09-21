@@ -3,23 +3,29 @@
     <group eventID="1" id="0">
         <event-collide-actortotype comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <print comment="false" x="26" y="47">
+                <comment-long comment="false" x="26" y="47">
+                    <int id="0" val="A whole slew of logic that:&#10;1) Gives the player health&#10;2) Allows the player to die via alien bullet"/>
+                </comment-long>
+                <comment-long comment="false" x="26" y="127">
+                    <int id="0" val="3) Resets money to what it was at the beginning of the scene if the player dies"/>
+                </comment-long>
+                <print comment="false" x="26" y="207">
                     <int id="0" val="Tank hit by bullet"/>
                 </print>
-                <die comment="false" x="26" y="67">
+                <die comment="false" x="26" y="227">
                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                 </die>
-                <play-sound4 comment="false" x="26" y="99">
+                <play-sound4 comment="false" x="26" y="259">
                     <int id="0" val="0"/>
                     <sound eid="78" id="1"/>
                 </play-sound4>
-                <shake-start comment="false" x="26" y="126">
+                <shake-start comment="false" x="26" y="286">
                     <int id="0" val="2"/>
                     <int id="1" val=".2"/>
                 </shake-start>
-                <if comment="false" x="26" y="146">
+                <if comment="false" x="26" y="306">
                     <group eventID="1" id="-1">
-                        <set-val-52-2 comment="false" x="37" y="176">
+                        <set-val-52-2 comment="false" x="37" y="336">
                             <minus comment="false" id="0" x="0" y="0">
                                 <get-val-52-2 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>
@@ -80,26 +86,29 @@
     <group eventID="4" id="0">
         <event-att-bool comment="false" x="15" y="15">
             <group eventID="4" id="-1">
-                <set-dxy comment="false" x="26" y="47">
+                <comment-short comment="false" x="26" y="47">
+                    <int id="0" val="death logic"/>
+                </comment-short>
+                <set-dxy comment="false" x="26" y="67">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="0"/>
                     <int id="2" val="0"/>
                 </set-dxy>
-                <setanim comment="false" x="26" y="74">
+                <setanim comment="false" x="26" y="94">
                     <ACTOR eid="this" id="0"/>
                     <get-val-52-4 comment="false" id="1" x="0" y="0"/>
                 </setanim>
-                <actor-enabledisable-snippet comment="false" x="26" y="106">
+                <actor-enabledisable-snippet comment="false" x="26" y="126">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="1"/>
                     <int id="2" val="2 Way Control"/>
                 </actor-enabledisable-snippet>
-                <dolater comment="false" x="26" y="133">
+                <dolater comment="false" x="26" y="153">
                     <group eventID="4" id="-1">
-                        <set-game-val-4 comment="false" x="37" y="160">
+                        <set-game-val-4 comment="false" x="37" y="180">
                             <get-val-52-5 comment="false" id="0" x="0" y="0"/>
                         </set-game-val-4>
-                        <scene-reload-new comment="false" x="37" y="185">
+                        <scene-reload-new comment="false" x="37" y="205">
                             <int id="0" val="0"/>
                             <int id="1" val="0.3"/>
                             <int id="2" val="0"/>

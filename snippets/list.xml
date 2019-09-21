@@ -159,7 +159,7 @@
         <blocks/>
         <events>
             <event displayName="Custom Event" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
+            <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="false"/>
             <event displayName="Keyboard Copy" enabled="true" id="3" name="event-key-press-release" order="3" repeats="true"/>
         </events>
     </snippet>
@@ -230,10 +230,6 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_33_33_EditScreen" classname="scripts.Design_33_33_EditScreen" desc="" description="" design="true" drawOrder="0" id="33" name="EditScreen" oid="-1" package="scripts" shared="false" type="scene">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet actorid="40" attachedevent="true" class="scripts.ActorEvents_40" classname="scripts.ActorEvents_40" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="34" name="ActorEvents_40" oid="-1" package="scripts." shared="false" type="actor">
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="LocalMoney" hidden="false" id="1" name="_LocalMoney" order="0"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="triggerHUD" hidden="false" id="2" name="_triggerHUD" order="1"/>
@@ -284,20 +280,6 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_41_41_ButtonDropdown" classname="scripts.Design_41_41_ButtonDropdown" desc="" description="" design="true" drawOrder="0" id="41" name="ButtonDropdown" oid="-1" package="scripts" shared="false" type="actor">
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Drop Down Sprite" hidden="false" id="1" name="_DropDownSprite" order="1"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Dropdown Pos X" hidden="false" id="2" name="_DropdownPosX" order="2"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Dropdown Pos Y" hidden="false" id="3" name="_DropdownPosY" order="3"/>
-        <actor default="" defaultValue="" desc="" dropdown="" fullname="Created Dropdown" hidden="true" id="4" name="_CreatedDropdown" order="4"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Mouse Is Hovering" hidden="true" id="5" name="_MouseIsHovering" order="5"/>
-        <blocks/>
-        <events>
-            <event displayName="On Actor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="3" repeats="true"/>
-            <event displayName="Click" enabled="true" id="3" name="event-mouse-press-release" order="4" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="4" name="step" order="5" repeats="true"/>
-        </events>
-    </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="42" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" shared="false" type="scene">
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="SceneFinished" hidden="false" id="1" name="_SceneFinished" order="0"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="NumberOfEnemies" hidden="false" id="2" name="_NumberOfEnemies" order="1"/>
@@ -337,20 +319,6 @@
             <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_47_47_Level2Movement" classname="scripts.Design_47_47_Level2Movement" desc="" description="" design="true" drawOrder="0" id="47" name="Level 2 Movement" oid="-1" package="scripts" shared="false" type="scene">
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Wave 1 Num" hidden="true" id="1" name="_Wave1Num" order="0"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Wave 1 Pos Y" hidden="false" id="3" name="_Wave1PosY" order="2"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Wave 1 Pos X" hidden="false" id="4" name="_Wave1PosX" order="7"/>
-        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Wave 1 Alien To Spawn" hidden="false" id="5" name="_Wave1AlienToSpawn" order="1"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Wave 1 Amount" hidden="false" id="6" name="_Wave1Amount" order="3"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="interval" hidden="true" id="7" name="_interval" order="4"/>
-        <actor default="" defaultValue="" desc="" dropdown="" fullname="lastAlien" hidden="false" id="8" name="_lastAlien" order="5"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="alienSpeed" hidden="false" id="9" name="_alienSpeed" order="6"/>
-        <blocks/>
-        <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-        </events>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_48_48_Level2AlienMovement" classname="scripts.Design_48_48_Level2AlienMovement" desc="" description="" design="true" drawOrder="0" id="48" name="Level 2 Alien Movement" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="speed" hidden="false" id="1" name="_speed" order="1"/>
@@ -375,14 +343,13 @@
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="fire again" hidden="false" id="4" name="_fireagain" order="4"/>
         <blocks/>
         <events>
-            <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
             <event displayName="Created" enabled="true" id="3" name="init" order="3" repeats="true"/>
             <event displayName="Updating" enabled="true" id="4" name="step" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_51_51_OnBulletCreation" classname="scripts.Design_51_51_OnBulletCreation" desc="" description="" design="true" drawOrder="0" id="51" name="On Bullet Creation" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="speed" hidden="false" id="1" name="_speed" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="speed" hidden="false" id="1" name="_speed" order="1"/>
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>

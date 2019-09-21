@@ -3,17 +3,20 @@
     <group eventID="1" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="-1" id="-1">
-                <if comment="false" x="26" y="40">
+                <comment-long comment="false" x="26" y="40">
+                    <int id="0" val="New firing behavior that fires a stream of bullets for 24 frames. Every 2nd frame a new bullet is created. Can be halted by releasing the space bar early."/>
+                </comment-long>
+                <if comment="false" x="26" y="120">
                     <group eventID="-1" id="-1">
-                        <set-val-23-3 comment="false" x="37" y="83">
+                        <set-val-23-3 comment="false" x="37" y="163">
                             <plus comment="false" id="0" x="0" y="0">
                                 <get-val-23-3 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>
                             </plus>
                         </set-val-23-3>
-                        <if comment="false" x="37" y="113">
+                        <if comment="false" x="37" y="193">
                             <group eventID="1" id="-1">
-                                <shout comment="false" x="48" y="148">
+                                <shout comment="false" x="48" y="228">
                                     <ACTOR eid="this" id="0"/>
                                     <get-val-23-1 comment="false" id="1" x="0" y="0"/>
                                 </shout>
@@ -38,9 +41,9 @@
                         </less>
                     </and>
                 </if>
-                <if comment="false" x="26" y="204">
+                <if comment="false" x="26" y="284">
                     <group eventID="1" id="-1">
-                        <set-val-23-3 comment="false" x="37" y="237">
+                        <set-val-23-3 comment="false" x="37" y="317">
                             <int id="0" val="0"/>
                         </set-val-23-3>
                     </group>
@@ -49,9 +52,9 @@
                         <control eid="var" id="1" vid="2"/>
                     </keystate>
                 </if>
-                <if comment="false" x="26" y="269">
+                <if comment="false" x="26" y="349">
                     <group eventID="1" id="-1">
-                        <control-sound-channel comment="false" x="37" y="299">
+                        <control-sound-channel comment="false" x="37" y="379">
                             <int id="0" val="0"/>
                             <int id="1" val="1"/>
                         </control-sound-channel>

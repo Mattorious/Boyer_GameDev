@@ -2,18 +2,24 @@
 <groups>
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
-            <group eventID="1" id="-1"/>
+            <group eventID="1" id="-1">
+                <comment-long comment="false" x="26" y="40">
+                    <int id="0" val="A blank behavior that collects the values from the &amp;quot;upgrade&amp;quot; actors and allows easy reference by the &amp;quot;purchase&amp;quot; actor."/>
+                </comment-long>
+                <comment-long comment="false" x="26" y="120">
+                    <int id="0" val="Basically acts as a middleman. Stores various attribute values until one or both of the actor types needs and references them."/>
+                </comment-long>
+            </group>
         </init>
     </group>
     <group eventID="1" id="1">
-        <comment-wrapper comment="false" x="459" y="179">
-            <group eventID="1" id="-1">
-                <set-game-val-4 comment="false" x="470" y="199">
-                    <int id="0" val="5000"/>
-                </set-game-val-4>
-            </group>
-            <int id="0" val="DEBUG"/>
-        </comment-wrapper>
+        <get-val-57-5 comment="false" x="374" y="52"/>
+    </group>
+    <group eventID="1" id="2">
+        <get-val-57-4 comment="false" x="372" y="77"/>
+    </group>
+    <group eventID="1" id="3">
+        <get-val-57-3 comment="false" x="396" y="106"/>
     </group>
     <group eventID="1" id="-1"/>
 </groups>

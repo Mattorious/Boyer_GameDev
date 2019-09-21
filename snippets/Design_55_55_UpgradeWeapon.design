@@ -3,9 +3,12 @@
     <group eventID="3" id="0">
         <event-mouse-enter-exit-actor comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <if comment="false" x="26" y="42">
+                <comment-short comment="false" x="26" y="42">
+                    <int id="0" val="Flips the &amp;quot;is the tank&amp;apos;s gun upgraded?&amp;quot; bool in the intermediary screen to true"/>
+                </comment-short>
+                <if comment="false" x="26" y="62">
                     <group eventID="3" id="-1">
-                        <scene-set-attribute comment="false" x="37" y="72">
+                        <scene-set-attribute comment="false" x="37" y="92">
                             <int id="0" val="Upgrade Screen"/>
                             <int id="1" val="_TotalCost"/>
                             <plus comment="false" id="2" x="0" y="0">
@@ -16,12 +19,15 @@
                                 </scene-get-attribute>
                             </plus>
                         </scene-set-attribute>
-                        <scene-set-attribute comment="false" x="37" y="102">
+                        <scene-set-attribute comment="false" x="37" y="122">
                             <int id="0" val="Upgrade Screen"/>
                             <int id="1" val="_gunupgraded"/>
                             <true comment="false" id="2" x="0" y="0"/>
                         </scene-set-attribute>
-                        <print comment="false" x="37" y="127">
+                        <comment-short comment="false" x="37" y="147">
+                            <int id="0" val="adds this upgrade&amp;apos;s cost to the intermediary screen&amp;apos;s total"/>
+                        </comment-short>
+                        <print comment="false" x="37" y="167">
                             <str-combine comment="false" id="0" x="0" y="0">
                                 <int id="0" val="Setting cost to $"/>
                                 <tostring comment="false" id="1" x="0" y="0">
@@ -45,13 +51,6 @@
             <ACTOR eid="this" id="0"/>
             <int id="1" val="2"/>
         </event-mouse-enter-exit-actor>
-    </group>
-    <group eventID="3" id="1">
-        <scene-set-attribute comment="false" x="571" y="278">
-            <int id="0" val="Upgrade Screen"/>
-            <int id="1" val="_GunLevel"/>
-            <int id="2" val="1"/>
-        </scene-set-attribute>
     </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">

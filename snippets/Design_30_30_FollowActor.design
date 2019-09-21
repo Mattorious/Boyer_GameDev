@@ -3,16 +3,24 @@
     <group eventID="1" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <set-xy comment="false" x="26" y="40">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="0"/>
-                    <get-val-30-3 comment="false" id="2" x="0" y="0"/>
-                </set-xy>
-                <set-xy comment="false" x="26" y="72">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="1"/>
-                    <get-val-30-4 comment="false" id="2" x="0" y="0"/>
-                </set-xy>
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="allows the gun to follow the tank&amp;apos;s position and appear as if it was attached to the tank."/>
+                </comment-short>
+                <comment-wrapper comment="false" x="26" y="60">
+                    <group eventID="1" id="-1">
+                        <set-xy comment="false" x="37" y="80">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <get-val-30-3 comment="false" id="2" x="0" y="0"/>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="112">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <get-val-30-4 comment="false" id="2" x="0" y="0"/>
+                        </set-xy>
+                    </group>
+                    <int id="0" val="gimp behavior that&amp;apos;s useless on its own, but is referenced and utilized from &amp;quot;GunUpgradeLevel&amp;quot; behavior"/>
+                </comment-wrapper>
             </group>
         </step>
     </group>

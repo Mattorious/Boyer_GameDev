@@ -3,7 +3,13 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <setvel comment="false" x="26" y="40">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="sets bullet speed and direction when it&amp;apos;s created"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="60">
+                    <int id="0" val="looking back I prob didn&amp;apos;t need this - could&amp;apos;ve just controlled this from an already made behavior - but whatevs"/>
+                </comment-short>
+                <setvel comment="false" x="26" y="80">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="90"/>
                     <get-val-51-1 comment="false" id="2" x="0" y="0"/>

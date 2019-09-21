@@ -3,11 +3,20 @@
     <group eventID="1" id="0">
         <event-mouse-enter-exit-actor comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <if comment="false" x="26" y="42">
+                <comment-long comment="false" x="26" y="42">
+                    <int id="0" val="A whole series of logic that lets the attached button apply either or both of the upgrades if the funds are available."/>
+                </comment-long>
+                <comment-short comment="false" x="26" y="122">
+                    <int id="0" val="if available funds are greater than or equal to the cost of the upgrade(s)"/>
+                </comment-short>
+                <if comment="false" x="26" y="142">
                     <group eventID="1" id="-1">
-                        <if comment="false" x="37" y="72">
+                        <comment-short comment="false" x="37" y="172">
+                            <int id="0" val="apply the upgrades as indicated by intermediary screen (see &amp;quot;Upgrade Screen&amp;quot; in scene behaviors)"/>
+                        </comment-short>
+                        <if comment="false" x="37" y="192">
                             <group eventID="1" id="-1">
-                                <set-game-val-6 comment="false" x="48" y="102">
+                                <set-game-val-6 comment="false" x="48" y="222">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-6>
                             </group>
@@ -19,9 +28,9 @@
                                 <true comment="false" id="1" x="0" y="0"/>
                             </eq>
                         </if>
-                        <if comment="false" x="37" y="139">
+                        <if comment="false" x="37" y="259">
                             <group eventID="1" id="-1">
-                                <set-game-val-7 comment="false" x="48" y="169">
+                                <set-game-val-7 comment="false" x="48" y="289">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-7>
                             </group>
@@ -33,13 +42,16 @@
                                 <true comment="false" id="1" x="0" y="0"/>
                             </eq>
                         </if>
-                        <set-game-val-4 comment="false" x="37" y="206">
+                        <comment-short comment="false" x="37" y="326">
+                            <int id="0" val="Subtracting the difference from funds and updating the UI"/>
+                        </comment-short>
+                        <set-game-val-4 comment="false" x="37" y="346">
                             <minus comment="false" id="0" x="0" y="0">
                                 <get-game-val-4 comment="false" id="0" x="0" y="0"/>
                                 <get-val-56-3 comment="false" id="1" x="0" y="0"/>
                             </minus>
                         </set-game-val-4>
-                        <scene-set-attribute comment="false" x="37" y="241">
+                        <scene-set-attribute comment="false" x="37" y="376">
                             <int id="0" val="Upgrade Screen"/>
                             <int id="1" val="_TotalCost"/>
                             <int id="2" val="0"/>
@@ -50,13 +62,16 @@
                         <get-val-56-3 comment="false" id="1" x="0" y="0"/>
                     </moreeq>
                 </if>
-                <else comment="false" x="26" y="273">
+                <else comment="false" x="26" y="408">
                     <group eventID="1" id="-1">
-                        <play-sound4 comment="false" x="37" y="293">
+                        <comment-short comment="false" x="37" y="428">
+                            <int id="0" val="Audio and visual feedback to tell the player that they&amp;apos;re broke"/>
+                        </comment-short>
+                        <play-sound4 comment="false" x="37" y="448">
                             <int id="0" val="0"/>
                             <sound eid="77" id="1"/>
                         </play-sound4>
-                        <shake-start comment="false" x="37" y="320">
+                        <shake-start comment="false" x="37" y="475">
                             <int id="0" val="2"/>
                             <int id="1" val=".1"/>
                         </shake-start>
@@ -71,7 +86,10 @@
     <group eventID="2" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <set-val-56-3 comment="false" x="26" y="40">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="Updates the total cost every frame based on intermediary behavior (see &amp;quot;Upgrade Screen&amp;quot; in scene behaviors)"/>
+                </comment-short>
+                <set-val-56-3 comment="false" x="26" y="60">
                     <scene-get-attribute comment="false" id="0" x="0" y="0">
                         <int id="0" val="Upgrade Screen"/>
                         <int id="1" val="_TotalCost"/>

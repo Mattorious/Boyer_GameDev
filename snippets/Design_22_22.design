@@ -3,12 +3,15 @@
     <group eventID="1" id="0">
         <receive-message comment="false" x="15" y="15">
             <group eventID="-1" id="-1">
-                <if comment="false" x="26" y="45">
+                <comment-short comment="false" x="26" y="45">
+                    <int id="0" val="default untouched preset code"/>
+                </comment-short>
+                <if comment="false" x="26" y="65">
                     <group eventID="-1" id="-1">
-                        <set-val-22-10 comment="false" x="37" y="70">
+                        <set-val-22-10 comment="false" x="37" y="90">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-22-10>
-                        <create-actor3 comment="false" x="37" y="95">
+                        <create-actor3 comment="false" x="37" y="115">
                             <actortype eid="var" id="0" vid="4"/>
                             <plus comment="false" id="1" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
@@ -26,17 +29,17 @@
                             </plus>
                             <int id="3" val="2"/>
                         </create-actor3>
-                        <set-val-22-9 comment="false" x="37" y="140">
+                        <set-val-22-9 comment="false" x="37" y="160">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-22-9>
-                        <apply-filter comment="false" x="37" y="167">
+                        <apply-filter comment="false" x="37" y="187">
                             <ACTOR eid="var" id="0" vid="9"/>
                             <filter-tint comment="false" id="1" x="0" y="0">
                                 <color b="51" g="51" id="0" r="255"/>
                                 <int id="1" val="75"/>
                             </filter-tint>
                         </apply-filter>
-                        <set-xy comment="false" x="37" y="207">
+                        <set-xy comment="false" x="37" y="227">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="0"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -53,7 +56,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <set-xy comment="false" x="37" y="257">
+                        <set-xy comment="false" x="37" y="277">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -70,7 +73,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <setangle comment="false" x="37" y="307">
+                        <setangle comment="false" x="37" y="327">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -82,7 +85,7 @@
                                 <get-val-22-6 comment="false" id="1" x="0" y="0"/>
                             </minus>
                         </setangle>
-                        <setvel comment="false" x="37" y="357">
+                        <setvel comment="false" x="37" y="377">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -95,23 +98,23 @@
                             </minus>
                             <get-val-22-2 comment="false" id="2" x="0" y="0"/>
                         </setvel>
-                        <play-sound4 comment="false" x="37" y="407">
+                        <play-sound4 comment="false" x="37" y="427">
                             <int id="0" val="0"/>
                             <sound eid="var" id="1" vid="7"/>
                         </play-sound4>
                     </group>
                     <get-val-22-10 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="26" y="446">
+                <else comment="false" x="26" y="466">
                     <group eventID="-1" id="-1">
-                        <setanim comment="false" x="37" y="466">
+                        <setanim comment="false" x="37" y="486">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="Move/Idle"/>
                         </setanim>
-                        <set-val-22-10 comment="false" x="37" y="493">
+                        <set-val-22-10 comment="false" x="37" y="513">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-22-10>
-                        <create-actor3 comment="false" x="37" y="518">
+                        <create-actor3 comment="false" x="37" y="538">
                             <actortype eid="var" id="0" vid="4"/>
                             <get-xy comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -123,10 +126,10 @@
                             </get-xy>
                             <int id="3" val="1"/>
                         </create-actor3>
-                        <set-val-22-9 comment="false" x="37" y="558">
+                        <set-val-22-9 comment="false" x="37" y="578">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-22-9>
-                        <set-xy comment="false" x="37" y="585">
+                        <set-xy comment="false" x="37" y="605">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="0"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -143,7 +146,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <set-xy comment="false" x="37" y="635">
+                        <set-xy comment="false" x="37" y="655">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -160,7 +163,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <setangle comment="false" x="37" y="685">
+                        <setangle comment="false" x="37" y="705">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -172,7 +175,7 @@
                                 <get-val-22-6 comment="false" id="1" x="0" y="0"/>
                             </minus>
                         </setangle>
-                        <setvel comment="false" x="37" y="735">
+                        <setvel comment="false" x="37" y="755">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -185,7 +188,7 @@
                             </minus>
                             <get-val-22-2 comment="false" id="2" x="0" y="0"/>
                         </setvel>
-                        <play-sound4 comment="false" x="37" y="785">
+                        <play-sound4 comment="false" x="37" y="805">
                             <int id="0" val="0"/>
                             <sound eid="var" id="1" vid="7"/>
                         </play-sound4>
@@ -199,7 +202,10 @@
     <group eventID="2" id="0">
         <event-key-press-release comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <play-sound-channel comment="false" x="26" y="42">
+                <comment-short comment="false" x="26" y="42">
+                    <int id="0" val="laser sound. pew!"/>
+                </comment-short>
+                <play-sound-channel comment="false" x="26" y="62">
                     <int id="0" val="1"/>
                     <sound eid="85" id="1"/>
                     <int id="2" val="1"/>

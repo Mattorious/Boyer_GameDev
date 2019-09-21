@@ -3,22 +3,25 @@
     <group eventID="1" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <if comment="false" x="26" y="40">
+                <comment-long comment="false" x="26" y="40">
+                    <int id="0" val="basic behavior that keeps track of how many aliens have been killed. If enough have, the scene moves on to the next scene."/>
+                </comment-long>
+                <if comment="false" x="26" y="120">
                     <group eventID="1" id="-1">
-                        <if comment="false" x="37" y="70">
+                        <if comment="false" x="37" y="150">
                             <group eventID="1" id="-1">
-                                <set-val-36-3 comment="false" x="48" y="100">
+                                <set-val-36-3 comment="false" x="48" y="180">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-36-3>
-                                <create-actor3 comment="false" x="48" y="125">
+                                <create-actor3 comment="false" x="48" y="205">
                                     <actortype eid="42" id="0"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="0"/>
                                     <int id="3" val="2"/>
                                 </create-actor3>
-                                <dolater comment="false" x="48" y="152">
+                                <dolater comment="false" x="48" y="232">
                                     <group eventID="1" id="-1">
-                                        <scene-change-through comment="false" x="59" y="179">
+                                        <scene-change-through comment="false" x="59" y="259">
                                             <get-val-36-4 comment="false" id="0" x="0" y="0"/>
                                             <int id="1" val="0"/>
                                             <int id="2" val="1"/>
@@ -46,12 +49,15 @@
     <group eventID="3" id="0">
         <draw comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <if comment="false" x="26" y="40">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="fun lil text that pops up when all the aliens are dead"/>
+                </comment-short>
+                <if comment="false" x="26" y="60">
                     <group eventID="3" id="-1">
-                        <set-font-new comment="false" x="37" y="65">
+                        <set-font-new comment="false" x="37" y="85">
                             <font eid="37" id="0"/>
                         </set-font-new>
-                        <draw-text comment="false" x="37" y="92">
+                        <draw-text comment="false" x="37" y="112">
                             <int id="0" val="Invasion Halted"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <div comment="false" id="0" x="0" y="0">

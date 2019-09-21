@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="2" id="0">
-        <event-periodic comment="false" x="15" y="15">
-            <group eventID="2" id="-1"/>
-            <get-val-50-3 comment="false" id="0" x="0" y="0"/>
-            <ACTOR eid="this" id="2"/>
-        </event-periodic>
-    </group>
-    <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <set-val-50-3 comment="false" x="26" y="40">
+                <comment-long comment="false" x="26" y="40">
+                    <int id="0" val="Sets an inital random interval between 2 &amp;amp; 8 seconds before the alien is allowed to fire."/>
+                </comment-long>
+                <set-val-50-3 comment="false" x="26" y="120">
                     <randomfloat comment="false" id="0" x="0" y="0">
                         <int id="0" val="2"/>
                         <int id="1" val="8"/>
                     </randomfloat>
                 </set-val-50-3>
-                <set-val-50-4 comment="false" x="26" y="65">
+                <set-val-50-4 comment="false" x="26" y="145">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-val-50-4>
             </group>
@@ -27,11 +22,17 @@
     <group eventID="4" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="4" id="-1">
-                <if comment="false" x="26" y="40">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="if the alien is allowed to fire"/>
+                </comment-short>
+                <if comment="false" x="26" y="60">
                     <group eventID="4" id="-1">
-                        <dolater comment="false" x="37" y="70">
+                        <dolater comment="false" x="37" y="90">
                             <group eventID="4" id="-1">
-                                <create-actor3 comment="false" x="48" y="102">
+                                <comment-short comment="false" x="48" y="122">
+                                    <int id="0" val="wait for the interval, create a bullet at the center of Self, play its corresponding audio, reset the random interval, and allow the bullet to fire again"/>
+                                </comment-short>
+                                <create-actor3 comment="false" x="48" y="142">
                                     <actortype eid="57" id="0"/>
                                     <plus comment="false" id="1" x="0" y="0">
                                         <get-xy comment="false" id="0" x="0" y="0">
@@ -61,24 +62,27 @@
                                     </plus>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <play-sound4 comment="false" x="48" y="152">
+                                <play-sound4 comment="false" x="48" y="192">
                                     <int id="0" val="0"/>
                                     <sound eid="81" id="1"/>
                                 </play-sound4>
-                                <set-val-50-3 comment="false" x="48" y="179">
+                                <set-val-50-3 comment="false" x="48" y="219">
                                     <randomfloat comment="false" id="0" x="0" y="0">
                                         <int id="0" val="2"/>
                                         <int id="1" val="8"/>
                                     </randomfloat>
                                 </set-val-50-3>
-                                <set-val-50-4 comment="false" x="48" y="204">
+                                <set-val-50-4 comment="false" x="48" y="244">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-50-4>
                             </group>
                             <get-val-50-3 comment="false" id="0" x="0" y="0"/>
                             <ACTOR eid="this" id="2"/>
                         </dolater>
-                        <set-val-50-4 comment="false" x="37" y="241">
+                        <comment-short comment="false" x="37" y="281">
+                            <int id="0" val="prevents alien from spamming zingers"/>
+                        </comment-short>
+                        <set-val-50-4 comment="false" x="37" y="301">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-50-4>
                     </group>

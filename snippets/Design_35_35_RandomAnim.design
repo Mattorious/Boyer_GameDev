@@ -3,15 +3,18 @@
     <group eventID="1" id="0">
         <init comment="false" x="16" y="15">
             <group eventID="1" id="-1">
-                <set-val-35-1 comment="false" x="27" y="40">
+                <comment-short comment="false" x="27" y="40">
+                    <int id="0" val="picks a random animation between two different options so the aliens don&amp;apos;t look like they&amp;apos;re dancing together or smth"/>
+                </comment-short>
+                <set-val-35-1 comment="false" x="27" y="60">
                     <randint comment="false" id="0" x="0" y="0">
                         <int id="0" val="0"/>
                         <int id="1" val="1"/>
                     </randint>
                 </set-val-35-1>
-                <if comment="false" x="27" y="65">
+                <if comment="false" x="27" y="85">
                     <group eventID="1" id="-1">
-                        <setanim comment="false" x="38" y="95">
+                        <setanim comment="false" x="38" y="115">
                             <ACTOR eid="this" id="0"/>
                             <get-val-35-2 comment="false" id="1" x="0" y="0"/>
                         </setanim>
@@ -21,9 +24,9 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <if comment="false" x="27" y="139">
+                <if comment="false" x="27" y="159">
                     <group eventID="1" id="-1">
-                        <setanim comment="false" x="38" y="169">
+                        <setanim comment="false" x="38" y="189">
                             <ACTOR eid="this" id="0"/>
                             <get-val-35-3 comment="false" id="1" x="0" y="0"/>
                         </setanim>
